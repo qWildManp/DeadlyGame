@@ -14,8 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalItemsInSublevel: 3
   maxKeyCount: 0
-  maxFlashLightCount: 0
   maxToolCount: 2
-  maxBallCount: 0
-  maxClueCount: 0
-  levelKeyItem: 1
+  levelKeyItem: 4

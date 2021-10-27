@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomBehavior : MonoBehaviour, IPropPopulator
+public class RoomBehavior : MonoBehaviour
 {
     private Room room;
 
@@ -17,13 +17,6 @@ public class RoomBehavior : MonoBehaviour, IPropPopulator
     {
         
     }
-    public void GenerateProps()
-    {
-        CheckForAttachedRooms();
-        GenerateItem(RoomItemType.KEY);
-    }
-
-
 
     void GenerateItem(RoomItemType itemType)
     {

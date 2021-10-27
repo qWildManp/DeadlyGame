@@ -7688,6 +7688,7 @@ MonoBehaviour:
   - {fileID: 492853138612466124}
   - {fileID: 5200206784650420416}
   - {fileID: 1153138933659224952}
+  - {fileID: 2816969856128046726}
   roomType: 4
 --- !u!54 &5188088880378444764
 Rigidbody:
@@ -11843,6 +11844,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3338034200979445332, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
+      propertyPath: m_Name
+      value: Spawnpoint-7
+      objectReference: {fileID: 0}
     - target: {fileID: 3376066558454241845, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
       propertyPath: m_Name
       value: cabinet_drawer_1 (2)
@@ -11852,6 +11857,11 @@ PrefabInstance:
 --- !u!4 &4094469066918584351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2707193380517822607, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
+  m_PrefabInstance: {fileID: 2108700458616627344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2816969856128046726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4203117177545618966, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
   m_PrefabInstance: {fileID: 2108700458616627344}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3050270715088256366
@@ -11927,14 +11937,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
---- !u!4 &1136418954476092897 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2707193380517822607, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
-  m_PrefabInstance: {fileID: 3050270715088256366}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1153138933659224952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4203117177545618966, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
+  m_PrefabInstance: {fileID: 3050270715088256366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1136418954476092897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2707193380517822607, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
   m_PrefabInstance: {fileID: 3050270715088256366}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4360205292405540826

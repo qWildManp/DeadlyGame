@@ -226,6 +226,7 @@ public class RoomManager : MonoBehaviour
                         }
                         else
                         {
+                            //Generate Item
                             if (!hasGeneratedItems)
                             {
                                 Debug.Log("Generate Items");
@@ -244,11 +245,13 @@ public class RoomManager : MonoBehaviour
                                             }
                                         }
                                     }
+                                    Debug.Log("Num of respawn Point List : " + respawnPointsList.Count);
                                     GameObject.Find("ItemManager").GetComponent<ItemManager>().GenerateRoomItems(respawnPointsList, levelRoomList.Key);
                                     Debug.Log("level " + levelRoomList.Key + "over");
                                 }
                                 hasGeneratedItems = true;
                             }
+                            //Generate Door
                             if (!hasGeneratedDoors)// Generate Doors
                              {
                                     List<Transform> entrances;
@@ -288,7 +291,7 @@ public class RoomManager : MonoBehaviour
                                     }
                                     hasGeneratedDoors = true;
                                 }
-                                //Generate character
+                            //Generate character
                             if (!hasGeneratedCharacter)
                                 {
                                     Destroy(GameObject.Find("Camera"));

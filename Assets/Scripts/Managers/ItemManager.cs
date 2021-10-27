@@ -30,7 +30,7 @@ public class ItemManager : MonoBehaviour
 
     private void Awake()
 	{
-		if (_instance != null && _instance != this)
+		if (_instance !=null && _instance != this)
 		{
 			Destroy(this.gameObject);
 		}
@@ -83,7 +83,6 @@ public class ItemManager : MonoBehaviour
 		bool isTypeValidate;
 		bool isSpawnPointValidate;
 		int avaliableNum;
-		
 		avaliableItemList.TryGetValue(itemType, out avaliableNum);
 		//check for avaliable num
 		if (avaliableNum <= 0)
@@ -114,6 +113,8 @@ public class ItemManager : MonoBehaviour
 		activeItemSpawnRule.CloneAvailableItemDictionary(out avaliableItemList);
 		int maxCount = activeItemSpawnRule.totalItemsInSublevel;
 		int generateNum = 0;
+
+		//TODO : 理论上这个循环不会触发成死循环，但是这个循环体造成了卡死
         while (generateNum < maxCount)
         {
 			int rnd_type_idx = UnityEngine.Random.Range(0, typeList.Count);
@@ -127,6 +128,7 @@ public class ItemManager : MonoBehaviour
 				avaliableItemList[itemType] -= 1;
 				shuffledList.Remove(spawnPoint);
             }
+			
 		}
 
     }

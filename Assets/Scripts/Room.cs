@@ -62,12 +62,6 @@ public class Room : MonoBehaviour
     {
         return exitConnectingTo[exit];
     }
-    // Update is called once per frame
-    void Update()
-    { 
-
-    }
-
     /*
      * 
      *   +------+

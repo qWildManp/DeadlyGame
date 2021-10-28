@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class fuseboxBehavior : InteractiveItem
 {
+    GameObject UI;
     [SerializeField] private bool open;
     [SerializeField] private bool hasHandle;
     // Start is called before the first frame update
     void Start()
     {
+        UI = GameObject.Find("Canvas");
         open = true;
         hasHandle = false;
     }
@@ -50,7 +52,7 @@ public class fuseboxBehavior : InteractiveItem
                         RestoreFuseSwitch();
                         if (msg!="")
                         {
-                            Debug.Log(msg);
+                            UI.GetComponent<MsgDisplayer>().SetMessage(msg);
                         }
                     }
                 }

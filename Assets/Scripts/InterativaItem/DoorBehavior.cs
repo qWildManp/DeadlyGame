@@ -6,6 +6,7 @@ public class DoorBehavior : MonoBehaviour
 {
     private Animator animator;
     [SerializeField] private bool openable;
+    GameObject UI;
     private GameObject player;
     private bool playerEnter;
     [SerializeField] private bool islocked;
@@ -20,6 +21,7 @@ public class DoorBehavior : MonoBehaviour
         currentCountDown = countDown;
         animator = GetComponent<Animator>();
         playerEnter = false;
+        UI = GameObject.Find("Canvas");
     }
     private void Update()
     {
@@ -29,7 +31,7 @@ public class DoorBehavior : MonoBehaviour
             {
                 if (islocked && GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().CheckItem(this.unlockRequirement))
                 {// if the door is locked by key
-                    Debug.Log("Door Unlocked");
+                    UI.GetComponent<MsgDisplayer>().SetMessage("Door Unlocked");
                     UnlockDoor();
                 }
                 if (!islocked)
@@ -49,7 +51,7 @@ public class DoorBehavior : MonoBehaviour
                 else
                 {
 
-                    Debug.Log("The door is locked, I need " + unlockRequirement);
+                    UI.GetComponent<MsgDisplayer>().SetMessage("The door is locked, I need " + unlockRequirement);
                 }
             }
             else
@@ -73,7 +75,7 @@ public class DoorBehavior : MonoBehaviour
         else
         {
             if (playerEnter && Input.GetKeyDown(KeyCode.E))
-                Debug.Log("I cannot open it!");
+                UI.GetComponent<MsgDisplayer>().SetMessage("I cannot open it!");
         }
         
     }

@@ -34,7 +34,6 @@ public class playerInteractBehavior : MonoBehaviour
             RoomItem item = obj.GetComponent<RoomItem>();
             if (item)
             {
-                Debug.Log("See " + obj.name);
                 item.SetChecked(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {

@@ -5,10 +5,12 @@ using UnityEngine;
 public class ElevatorButtonBehavior : InteractiveItem
 {
     // Start is called before the first frame update
+    GameObject UI;
     private bool isPressed;
     [SerializeField] private bool activated; 
     void Start()
     {
+        UI = GameObject.Find("Canvas");
         itemAnimator = GetComponent<Animator>();
         isChecked = false;
         isPressed = false;
@@ -43,7 +45,7 @@ public class ElevatorButtonBehavior : InteractiveItem
                         if (activated)
                             PressButton();
                         else
-                            Debug.Log("Doesn't work... There might be something to activate it..");
+                            UI.GetComponent<MsgDisplayer>().SetMessage("Doesn't work... There might be something to activate it..");
                     }
                 }
 

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class FlashLightBehavior : MonoBehaviour
 {
+    GameObject UI;
     [SerializeField]private bool open;
     [SerializeField]private int battery;
     [SerializeField] private int max_battery;
@@ -14,6 +15,7 @@ public class FlashLightBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        UI = GameObject.Find("Canvas");
         currentCountDown = countDown;
         inPlayerHand = false;
     }
@@ -42,7 +44,7 @@ public class FlashLightBehavior : MonoBehaviour
             if (battery > 0)
                 open = !open;
             else
-                GameObject.Find("Canvas/Msg").GetComponent<Text>().text = "I need Battery !!";
+                UI.GetComponent<MsgDisplayer>().SetMessage("I need Battery !");
         }
         if (open)
         {
@@ -68,7 +70,7 @@ public class FlashLightBehavior : MonoBehaviour
             this.battery += 1;
             return true;
         }
-        GameObject.Find("Canvas/Msg").GetComponent<Text>().text = "Battery is full ";
+        UI.GetComponent<MsgDisplayer>().SetMessage("Battery is full ");
         return false;
     }
 }

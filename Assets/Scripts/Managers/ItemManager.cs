@@ -9,8 +9,9 @@ public enum RoomItemType
 	KEY = 1,
 	FLASHLIGHT = 2,
 	TOOLS = 4,
-	BALL = 8,
-	CLUE = 16
+	CLUE = 8,
+	BATTERY = 16,
+	HEALING = 32
 }
 
 
@@ -21,7 +22,6 @@ public class ItemManager : MonoBehaviour
 
 	[SerializeField] private GameObject keyPrefab;
 	[SerializeField] private List<GameObject> toolsPrefab;
-	[SerializeField] private GameObject flashLightPrefab;
 	[SerializeField] private List<ItemsSpawnRuleSriptable> ruleList;
 	[SerializeField] private List<RoomItemType> typeList;
 	ItemsSpawnRuleSriptable activeItemSpawnRule;
@@ -47,9 +47,6 @@ public class ItemManager : MonoBehaviour
         {
 			case RoomItemType.KEY:
 				spawnedPrefab = Instantiate(keyPrefab);
-				break;
-			case RoomItemType.FLASHLIGHT:
-				spawnedPrefab = Instantiate(flashLightPrefab);
 				break;
 			case RoomItemType.TOOLS:
 				int rnd_index = UnityEngine.Random.Range(0, toolsPrefab.Count);
@@ -117,6 +114,8 @@ public class ItemManager : MonoBehaviour
 		//TODO : 理论上这个循环不会触发成死循环，但是这个循环体造成了卡死
         while (generateNum < maxCount)
         {
+			if (shuffledList.Count == 0)
+				break;
 			int rnd_type_idx = UnityEngine.Random.Range(0, typeList.Count);
 			int rnd_spawnpoint_idx = UnityEngine.Random.Range(0, shuffledList.Count);
 			RoomItemType itemType = typeList[rnd_type_idx];
@@ -128,7 +127,6 @@ public class ItemManager : MonoBehaviour
 				avaliableItemList[itemType] -= 1;
 				shuffledList.Remove(spawnPoint);
             }
-			
 		}
 
     }

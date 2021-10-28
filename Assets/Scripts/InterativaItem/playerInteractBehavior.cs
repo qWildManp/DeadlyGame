@@ -22,7 +22,7 @@ public class playerInteractBehavior : MonoBehaviour
         if (inventary.CheckItem("FLASH LIGHT"))
         {
             flashLight.gameObject.SetActive(true);
-            flashLight.gameObject.GetComponent<FalshLightBehavior>().inPlayerHand = true;
+            flashLight.gameObject.GetComponent<FlashLightBehavior>().inPlayerHand = true;
         }
         if (Input.GetKeyDown(KeyCode.B))
         {

@@ -33,7 +33,7 @@ public class fuseboxBehavior : InteractiveItem
             SetHightLight(false);
         }
         isChecked = false;
-        player = GameObject.Find("Player(Clone)");
+        player = GameObject.Find("Player");
         if (player)
         {
             playerCapsule = player.transform.GetChild(2);

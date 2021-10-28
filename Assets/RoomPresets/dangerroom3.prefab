@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4784430870425889099}
   - component: {fileID: 3598824725604233848}
   - component: {fileID: 4726830964910647744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DangerRoom3_modified_pPlane1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1910,7 +1910,7 @@ GameObject:
   - component: {fileID: 4116344961969000072}
   - component: {fileID: 4691779990578524515}
   - component: {fileID: 6339112807899155221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DangerRoom3_modified_pPlane1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 4530644469806371556}
   - component: {fileID: 3113643613874374274}
   - component: {fileID: 5258115571041561206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DangerRoom3_modified_pPlane1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -48,7 +48,7 @@ public class GravityPuzzleBehavior : MonoBehaviour
     }
     private void SetInteract()
     {
-        GameObject player = GameObject.Find("Player(Clone)");
+        GameObject player = GameObject.Find("Player");
         Transform playerCamera = player.transform.GetChild(0);
         Transform playerController = player.transform.GetChild(2);
         playerController.GetComponent<CharacterController>().enabled = false;
@@ -58,7 +58,7 @@ public class GravityPuzzleBehavior : MonoBehaviour
     }
     private void ResetInteract()
     {
-        GameObject player = GameObject.Find("Player(Clone)");
+        GameObject player = GameObject.Find("Player");
         Transform playerCamera = player.transform.GetChild(0);
         Transform playerController = player.transform.GetChild(2);
         playerController.GetComponent<CharacterController>().enabled = true;

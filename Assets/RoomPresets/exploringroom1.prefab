@@ -7743,7 +7743,7 @@ GameObject:
   - component: {fileID: 1333920455956885583}
   - component: {fileID: 7426069040035833019}
   - component: {fileID: 6053058551294976978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ExploringRoom1_modified_pPlane1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

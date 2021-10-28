@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using cakeslice;
 
 public class RoomItem : InteractiveItem
 {
@@ -20,7 +19,6 @@ public class RoomItem : InteractiveItem
         if (SpawnAt)
         {
             transform.position = SpawnAt.transform.position;
-            //transform.forward = SpawnAt.forward;
         }
         if (isChecked)
         {
@@ -32,6 +30,10 @@ public class RoomItem : InteractiveItem
         }
         isChecked = false;
             
+    }
+    public RoomItemType GetItemType()
+    {
+        return this.itemType;
     }
     public string GetItemName()
     {

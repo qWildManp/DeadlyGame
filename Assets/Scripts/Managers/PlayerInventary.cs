@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInventary : MonoBehaviour
 {
     [SerializeField] private Dictionary<GameObject, int> Inventarys;
-    [SerializeField] private GameObject testItemprefabe;
+    [SerializeField] private GameObject playerFlashLight;
     [SerializeField] private List<GameObject> itemPrefabes;
     [SerializeField] private GameObject playerInventaryUI;
     private bool UI_status;
@@ -13,11 +14,6 @@ public class PlayerInventary : MonoBehaviour
     void Start()
     {
         Inventarys = new Dictionary<GameObject, int>();
-        if (testItemprefabe)
-        {
-            GameObject testItem = Instantiate(testItemprefabe);
-            AddItem(testItem);
-        }
         UI_status = false;
     }
 
@@ -55,6 +51,39 @@ public class PlayerInventary : MonoBehaviour
         }
       
     }
+    public void UseBattery(GameObject item)
+    {
+        FlashLightBehavior flashLight = playerFlashLight.GetComponent<FlashLightBehavior>();
+        if (!Inventarys.ContainsKey(item))
+            return;
+        if (Inventarys[item] <= 0)
+        {
+            GameObject.Find("Canvas/Msg").GetComponent<Text>().text = "No Battery!";
+            return;
+        }
+        if (playerFlashLight.activeInHierarchy)
+        {
+            if (flashLight.AddBattery())
+                Inventarys[item] -= 1;
+        }
+        else
+        {
+            GameObject.Find("Canvas/Msg").GetComponent<Text>().text = "I need a flashlight!";
+        }
+
+    }
+    public int GetItemNum(GameObject item)
+    {
+        RoomItem itemProperty = item.GetComponent<RoomItem>();
+        foreach (GameObject prefabe in itemPrefabes)
+        {
+            if (prefabe.GetComponent<RoomItem>().GetItemName() == itemProperty.GetItemName())
+            {
+                return Inventarys[prefabe];
+            }
+        }
+        return 0;
+    }
     public void ChangePlayerInventaryDisplay()
     {
         UI_status = !UI_status;
@@ -70,6 +99,19 @@ public class PlayerInventary : MonoBehaviour
     public Dictionary<GameObject, int> GetInventaryList()
     {
         return this.Inventarys;
+    }
+    public bool FindItem(string requirement)
+    {
+        foreach (KeyValuePair<GameObject, int> item in Inventarys)
+        {
+            RoomItem itemInfo = item.Key.GetComponent<RoomItem>();
+            string itemName = itemInfo.GetItemName();
+            if (itemName == requirement)
+            {
+                return true;
+            }
+        }
+        return false;
     }
     public bool CheckItem(string requirement)
     {

@@ -26,9 +26,10 @@ public class RoomManager : MonoBehaviour
     [SerializeField] GameObject endRoomPrefabe;
     [SerializeField] GameObject checkpointRoomPrefabe;
     [SerializeField] GameObject checkpointRoomStairPrefabe;
-    [SerializeField] GameObject playerPrefabe;
+    [SerializeField] GameObject player;
     [SerializeField] GameObject doorPrefabe;
     [SerializeField] GameObject lunaDoorPrefabe;
+    [SerializeField] GameObject checkpointDoorPrefabe;
     [SerializeField] GameObject brokenDoorPrefabe;
 
     [SerializeField] int seed = 0;
@@ -274,9 +275,12 @@ public class RoomManager : MonoBehaviour
                                                 }
                                                 else
                                                 {
-                                                    if (sublevel.Key == 2 && connection.name == "checkpointroom_stair(Clone)")
+                                                    if (connection.name == "checkpointroom_stair(Clone)")
                                                     {
-                                                        door = Instantiate(lunaDoorPrefabe);
+                                                        if (sublevel.Key == 2)
+                                                            door = Instantiate(lunaDoorPrefabe);
+                                                        else
+                                                            door = Instantiate(checkpointDoorPrefabe);
                                                     }
                                                     else
                                                     {
@@ -295,7 +299,7 @@ public class RoomManager : MonoBehaviour
                             if (!hasGeneratedCharacter)
                                 {
                                     Destroy(GameObject.Find("Camera"));
-                                    GameObject player = Instantiate(playerPrefabe);
+                                    player.SetActive(true);
                                     player.transform.position = new Vector3(219, 210, -137);
                                     hasGeneratedCharacter = true;
                                 }

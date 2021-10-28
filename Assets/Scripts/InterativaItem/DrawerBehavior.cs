@@ -25,7 +25,7 @@ public class DrawerBehavior : InteractiveItem
             SetHightLight(false);
         }
         isChecked = false;
-        player = GameObject.Find("Player(Clone)");
+        player = GameObject.Find("Player");
             if (player)
             {
                 Ray ray = player.GetComponent<PlayerRayCast>().GetPlayerRay();

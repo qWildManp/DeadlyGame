@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82589669dea39f846bd52e48f2b5c9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 1
   itemName: LUNA KEY
 --- !u!23 &6555018344571890009
 MeshRenderer:

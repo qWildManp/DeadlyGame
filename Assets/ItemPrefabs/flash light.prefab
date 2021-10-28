@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82589669dea39f846bd52e48f2b5c9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 1
+  itemType: 2
   itemName: FLASH LIGHT
 --- !u!64 &6050960663532893053
 MeshCollider:
@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 1
   battery: 3
+  max_battery: 5
   countDown: 30
   inPlayerHand: 0
 --- !u!1 &6978956329252659880

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1095294993380059025}
   - component: {fileID: 6218882849432958389}
   - component: {fileID: 1443770715693543676}
+  - component: {fileID: 7924221640967365013}
   m_Layer: 0
   m_Name: InteruptorDeSeguridad:group2pCube6
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34400524851964001}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008946645, y: 0.0034801732, z: 0.009712851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0096760485, y: 0.0034801725, z: 0.0074208346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455980718235649898}
@@ -96,6 +97,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   eraseRenderer: 0
+--- !u!64 &7924221640967365013
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34400524851964001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3323316848801499091, guid: 990b9affb07af984ab6824f6d3145d98, type: 3}
 --- !u!1 &2647497055747530192
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,15 +138,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2647497055747530192}
-  m_LocalRotation: {x: -0.45878714, y: 0.5380654, z: -0.5380654, w: 0.45878714}
-  m_LocalPosition: {x: -0.0000052452087, y: 1.8, z: -2.8824472}
+  m_LocalRotation: {x: -0.47457123, y: 0.52419674, z: -0.52419674, w: 0.47457123}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1500, y: 1500, z: 1500}
   m_Children:
   - {fileID: 125757855268762074}
   - {fileID: 3153447487837185596}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 9.094, y: 90, z: -90}
+  m_LocalEulerAnglesHint: {x: 5.689, y: 90, z: -90}
 --- !u!95 &7596732613528434227
 Animator:
   serializedVersion: 3
@@ -174,8 +189,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.010335432, y: 0.014802799, z: 0.01887618}
-  m_Center: {x: -0.0030906496, y: 0.0029094147, z: 0.0048514246}
+  m_Size: {x: 0.007832755, y: 0.0077440077, z: 0.013451982}
+  m_Center: {x: -0.004341989, y: 0.0028827589, z: 0.0021393457}
 --- !u!114 &7639322606938148782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82589669dea39f846bd52e48f2b5c9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 2
+  itemType: 4
   itemName: FUSE HANDLE
 --- !u!1 &7190047327036996674
 GameObject:
@@ -202,6 +217,7 @@ GameObject:
   - component: {fileID: 5283811751675890817}
   - component: {fileID: 2706848653066512387}
   - component: {fileID: 1209357875929026580}
+  - component: {fileID: 1516184386772584976}
   m_Layer: 0
   m_Name: InteruptorDeSeguridad:group2pCube5
   m_TagString: Untagged
@@ -216,8 +232,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7190047327036996674}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008946645, y: 0.0034801732, z: 0.009712851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0096760485, y: 0.0034801725, z: 0.0074208346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3455980718235649898}
@@ -286,3 +302,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   eraseRenderer: 0
+--- !u!64 &1516184386772584976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7190047327036996674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1189518084097188347, guid: 990b9affb07af984ab6824f6d3145d98, type: 3}

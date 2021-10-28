@@ -1187,6 +1187,7 @@ MonoBehaviour:
   - {fileID: 4287245796022575127}
   - {fileID: 5725457325216049025}
   answerList: []
+  needLock: 1
   randomAns: 0
 --- !u!1 &6361989130481911994
 GameObject:

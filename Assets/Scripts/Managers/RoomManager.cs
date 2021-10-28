@@ -163,6 +163,7 @@ public class RoomManager : MonoBehaviour
     private bool hasGeneratedItems = false;
     private bool hasGeneratedDoors = false;
     private bool hasGeneratedCharacter = false;
+    private bool hasInitializeEndRoom = false;
     private void Update()
     {
         currentCountDown -= Time.deltaTime;
@@ -303,6 +304,10 @@ public class RoomManager : MonoBehaviour
                                     player.transform.position = new Vector3(219, 210, -137);
                                     hasGeneratedCharacter = true;
                                 }
+                            if (!hasInitializeEndRoom)
+                            {
+                                GameObject.Find("endroom(Clone)").GetComponent<EndRoomBehavior>().GetTwoPuzzleRooms();
+                            }
                             return;
                         }
                     }

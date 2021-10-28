@@ -7,23 +7,32 @@ public class GravityPuzzleBehavior : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private Transform ballRespawnPoint;
     [SerializeField] private GameObject gameCamera;
-    private bool Interacting;
-    private bool playerEnter;
-    private Vector3 RespawnPos;
+    [SerializeField] private GameObject goal;
     [SerializeField] private GameObject ball;
     [SerializeField] private GameObject puzzlePlateform;
+    private bool Interacting;
+    private bool playerEnter;
+    private bool solve;
+    private Vector3 RespawnPos;
+    private gravityPuzzleGoalTrigger goalTrigger;
     void Start()
     {
         RespawnPos =new Vector3 (ballRespawnPoint.position.x, ballRespawnPoint.position.y + 3f, ballRespawnPoint.position.z);
         Interacting = false;
+        solve = false;
         gameCamera.SetActive(false);
         this.puzzlePlateform.GetComponent<DragRotate>().enabled = false;
+        goalTrigger = goal.GetComponent<gravityPuzzleGoalTrigger>();
         ResetBallPos();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (solve)
+        {
+            return;
+        }
         if (playerEnter)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -31,11 +40,13 @@ public class GravityPuzzleBehavior : MonoBehaviour
                 if (!Interacting)
                 {
                     SetInteract();
+                    GetComponent<BoxCollider>().enabled = false;
                     Interacting = true;
                 }
                 else
                 {
                     ResetInteract();
+                    GetComponent<BoxCollider>().enabled = true;
                     Interacting = false;
                 }
             }
@@ -43,8 +54,17 @@ public class GravityPuzzleBehavior : MonoBehaviour
             {
                 ResetPos();
             }
+            if (goalTrigger.goal)
+            {
+                ResetInteract();
+                solve = true;
+            }
         }
        
+    }
+    public bool GetSolved()
+    {
+        return this.solve;
     }
     private void SetInteract()
     {
@@ -72,7 +92,6 @@ public class GravityPuzzleBehavior : MonoBehaviour
         if(other.tag == "Player")
         {
             playerEnter = true;
-            GetComponent<BoxCollider>().enabled = false;
         }
     }
     private void OnTriggerExit(Collider other)

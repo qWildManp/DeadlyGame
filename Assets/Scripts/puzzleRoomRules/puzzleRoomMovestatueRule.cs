@@ -6,9 +6,10 @@ public class puzzleRoomMovestatueRule : puzzleRoomRule
 {
     // Start is called before the first frame update
     [SerializeField] List<GameObject> Sets;
-    private int correctNum;
     [SerializeField] List<GameObject> answerList;
+    [SerializeField] bool needLock;
     [SerializeField] bool randomAns;
+    private int correctNum;
     void Start()
     {
         correctNum = 0;
@@ -32,7 +33,8 @@ public class puzzleRoomMovestatueRule : puzzleRoomRule
     // Update is called once per frame
     void Update()
     {
-        SetDoorLock();
+        if(needLock)
+            SetDoorLock();
         correctNum = 0;
         foreach(GameObject set in Sets)
         {

@@ -6,6 +6,7 @@ public class ElevatorButtonBehavior : InteractiveItem
 {
     // Start is called before the first frame update
     private bool isPressed;
+    [SerializeField] private bool activated; 
     void Start()
     {
         itemAnimator = GetComponent<Animator>();
@@ -37,14 +38,21 @@ public class ElevatorButtonBehavior : InteractiveItem
                 if (hit.collider.gameObject == gameObject)
                 {
                     isChecked = true;
-                    if (Input.GetKeyDown(KeyCode.E) && transform.parent)
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
-                         PressButton();
+                        if (activated)
+                            PressButton();
+                        else
+                            Debug.Log("Doesn't work... There might be something to activate it..");
                     }
                 }
 
             }
         }
+    }
+    public void SetButtonActive()
+    {
+        activated = true;
     }
     private void PressButton()
     {

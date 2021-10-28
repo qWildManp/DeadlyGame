@@ -16,6 +16,9 @@ public class puzzleRoomRule : MonoBehaviour
             playerEnter = true;
 
     }
+    public bool GetPuzzleIsSolved() {
+        return this.isSolved;
+    }
     protected void OnTriggerExit(Collider other)
     {
 

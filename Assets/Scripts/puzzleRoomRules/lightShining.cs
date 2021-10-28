@@ -24,4 +24,12 @@ public class lightShining : MonoBehaviour
         else
             _material.SetColor(_colorName, Color.red);
     }
+    public void SetLightColor(bool result)
+    {
+        Debug.Log(_material);
+        if(result)
+            _material.SetColor(_colorName, Color.green);
+        else
+            _material.SetColor(_colorName, Color.red);
+    }
 }

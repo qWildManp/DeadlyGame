@@ -19,16 +19,17 @@ public class playerInteractBehavior : MonoBehaviour
     {
         Ray ray = GetComponent<PlayerRayCast>().GetPlayerRay();
         RaycastHit hit;
-        if (inventary.CheckItem("FLASH LIGHT"))
+        if (inventary.CheckItem("FLASH LIGHT"))// if player has flash light,activate the flash light 
         {
             flashLight.gameObject.SetActive(true);
             flashLight.gameObject.GetComponent<FlashLightBehavior>().inPlayerHand = true;
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B))//Show player Inventary
         {
             inventary.ChangePlayerInventaryDisplay();
         }
-        if (Physics.Raycast(ray,out hit, 200))
+        //if(Input.GetKeyDown(KeyCode.P))//Show player Progess
+        if (Physics.Raycast(ray,out hit, 200))//player pick item
         {
             GameObject obj = hit.collider.gameObject;
             RoomItem item = obj.GetComponent<RoomItem>();

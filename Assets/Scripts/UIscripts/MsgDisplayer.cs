@@ -7,6 +7,7 @@ public class MsgDisplayer : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]private GameObject Messageblank;
+    [SerializeField] private GameObject PlaceNameblank;
     [SerializeField]private int msgCountdown;
     private float msgCurrentCountDown;
     void Start()
@@ -31,6 +32,29 @@ public class MsgDisplayer : MonoBehaviour
             msgCurrentCountDown = msgCountdown;
         }
        
+    }
+    public void SetPlaceName(string placename, RoomType roomtype)
+    {
+        Text temp = PlaceNameblank.GetComponent<Text>();
+        temp.text = placename;
+        switch (roomtype)
+        {
+            case RoomType.DANGER:
+                temp.color = Color.red;
+                break;
+            case RoomType.PUZZLE:
+                temp.color = Color.blue;
+                break;
+            case RoomType.FINAL_PUZZLE:
+                temp.color = Color.blue;
+                break;
+            case RoomType.END:
+                temp.color = Color.cyan;
+                break;
+            default:
+                temp.color = Color.green;
+                break;
+        }
     }
     public void SetMessage(string msg)
     {

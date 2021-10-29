@@ -18,6 +18,7 @@ public class Room : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private Transform[] roomExits;
     [SerializeField] private Transform[] itemSpawnPoints;
+    [SerializeField] private string roomName;
     private List<Transform> exitsList;
     [SerializeField] private RoomType roomType;
     private Vector2 roomID;
@@ -127,5 +128,10 @@ public class Room : MonoBehaviour
     public Transform[] GetItemSpawnPoints()
     {
         return itemSpawnPoints;
+    }
+
+    public string GetRoomName()
+    {
+        return this.roomName;
     }
 }

@@ -306,7 +306,7 @@ public class RoomManager : MonoBehaviour
                                 }
                             if (!hasInitializeEndRoom)
                             {
-                                GameObject.Find("endroom(Clone)").GetComponent<EndRoomBehavior>().GetTwoPuzzleRooms();
+                                GameObject.Find("endroom(Clone)").GetComponent<EndRoomRule>().GetTwoPuzzleRooms();
                             }
                             return;
                         }

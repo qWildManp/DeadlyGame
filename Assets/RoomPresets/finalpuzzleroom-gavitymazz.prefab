@@ -2045,6 +2045,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7228933310438826160, guid: b50cfc904259076458a8fe9247be8445, type: 3}
+--- !u!54 &4105644762414190250
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552148273866743004}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &4566616958995409910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,9 +2344,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5631983947837463366}
   - component: {fileID: -8033756691519842557}
-  - component: {fileID: 982409007416597877}
   - component: {fileID: -8787977162970198891}
   - component: {fileID: 7062535280850423397}
+  - component: {fileID: 1577266206111798882}
+  - component: {fileID: 5483331832313111842}
   m_Layer: 0
   m_Name: finalpuzzleroom-gavitymazz
   m_TagString: Untagged
@@ -2370,23 +2387,8 @@ MonoBehaviour:
   roomExits:
   - {fileID: 5701773375672755646}
   itemSpawnPoints: []
+  roomName: Study
   roomType: 32
---- !u!54 &982409007416597877
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4999843460258038268}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &-8787977162970198891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,6 +2416,34 @@ MonoBehaviour:
   isSolved: 0
   playerEnter: 0
   gravityPuzzle: {fileID: 58746232971939462}
+--- !u!114 &1577266206111798882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4999843460258038268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &5483331832313111842
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4999843460258038268}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5143347988988536156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4135,22 +4165,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1012618574550860719, guid: e0a9984056fddc543b110349e73ef899, type: 3}
---- !u!54 &4105644762414190250
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552148273866743004}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1 &9172412587014063281
 GameObject:
   m_ObjectHideFlags: 0

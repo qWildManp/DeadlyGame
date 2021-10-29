@@ -1258,9 +1258,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1947076714329469467}
   - component: {fileID: 284084029600934565}
-  - component: {fileID: -7117657332602703336}
   - component: {fileID: 5887724178306280313}
   - component: {fileID: -808892866353326431}
+  - component: {fileID: -5645888562075812208}
+  - component: {fileID: -2233263312640919552}
   m_Layer: 0
   m_Name: dangerroom4
   m_TagString: Untagged
@@ -1303,23 +1304,8 @@ MonoBehaviour:
   itemSpawnPoints:
   - {fileID: 3031904715671738245}
   - {fileID: 4824927415833360942}
+  roomName: Wine Cellar
   roomType: 8
---- !u!54 &-7117657332602703336
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175078142427703457}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &5887724178306280313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1345,6 +1331,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d3f1bad87398243870149ac3c51d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5645888562075812208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175078142427703457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-2233263312640919552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175078142427703457}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1257149636956534031
 GameObject:
   m_ObjectHideFlags: 0

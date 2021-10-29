@@ -4,40 +4,21 @@ using UnityEngine;
 
 public class RoomBehavior : MonoBehaviour
 {
-    private Room room;
-
+    GameObject UI;
     // Start is called before the first frame update
     void Start()
     {
-        
+        UI = GameObject.Find("Canvas");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    void GenerateItem(RoomItemType itemType)
-    {
-        //ItemManager.Instance.SpawnItemAt(itemType, )
-        Transform[] availableSpawnPoints = room.GetItemSpawnPoints();
-        Transform spawnPoint = GetRandomItemSpawnpoint(availableSpawnPoints);
-        ItemManager.Instance.SpawnItemAt(itemType, spawnPoint);
-    }
-        
-    
-    Transform GetRandomItemSpawnpoint(Transform[] spawnPoints)
-    {
-        int rndIndex = Random.Range(0, spawnPoints.Length); 
-        return spawnPoints[rndIndex];
-    }
-
-    void CheckForAttachedRooms()
-    {
-        if(room == null)
+        if(other.gameObject.tag == "Player")
         {
-            room = GetComponent<Room>();
+            string roomName = GetComponent<Room>().GetRoomName();
+            RoomType roomType = GetComponent<Room>().GetRoomType();
+            UI.GetComponent<MsgDisplayer>().SetPlaceName(roomName, roomType);
         }
     }
+    
 }

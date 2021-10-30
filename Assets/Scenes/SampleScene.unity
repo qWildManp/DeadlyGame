@@ -1345,6 +1345,8 @@ MonoBehaviour:
   ruleList:
   - {fileID: 11400000, guid: b44e061b37e46a746ac51802b9871d6b, type: 2}
   - {fileID: 11400000, guid: 71e5f4e9551577c4f9f9cb2a95971491, type: 2}
+  - {fileID: 11400000, guid: bbd97e51d4f58184a8a827db996d1310, type: 2}
+  - {fileID: 11400000, guid: 92ab857cbd6cbc849a842b2248992fbe, type: 2}
   typeList: 0400000001000000
 --- !u!4 &861483952
 Transform:
@@ -1857,7 +1859,7 @@ MonoBehaviour:
   lunaDoorPrefabe: {fileID: 4574144942931853490, guid: de7313ed8feb8b141b3eaa805d115395, type: 3}
   checkpointDoorPrefabe: {fileID: 8071256070211827279, guid: 5a4d6c311d94ed241b0a05d455a252ff, type: 3}
   brokenDoorPrefabe: {fileID: 5813913878412286994, guid: 34f32384c82f914498669aea7f3ac09b, type: 3}
-  seed: 383
+  seed: 100
   generateRandomSeed: 0
   countDown: 0.2
 --- !u!1 &1151965624

@@ -12,11 +12,15 @@ public class EndRoomRule : MonoBehaviour
     [SerializeField] private GameObject outterButton;
     [SerializeField] private bool gravityPuzzleSolved;
     [SerializeField] private bool moveStatueSolved;
+    [SerializeField] private bool gravitypuzzleChecked;
+    [SerializeField] private bool moveStatueChecked;
     // Start is called before the first frame update
     void Start()
     {
         gravityPuzzleSolved = false ;
         moveStatueSolved = false;
+        gravitypuzzleChecked = false;
+        moveStatueChecked = false;
     }
 
     // Update is called once per frame
@@ -27,10 +31,32 @@ public class EndRoomRule : MonoBehaviour
             if (gravityPuzzleRoom.GetComponent<puzzleRoomGravityPuzzleRule>().GetPuzzleIsSolved())
             {
                 gravityPuzzleSolved = true;
+                //ugly implement of show camera
+                if (!gravitypuzzleChecked)
+                {
+                    showCamera.SetActive(true);
+                    Invoke("TurnOffCamera", 3);
+                    gravitypuzzleChecked = true;
+                }
+            }
+            else
+            {
+                gravitypuzzleChecked = false;
             }
             if (moveStatueRoom.GetComponent<puzzleRoomMovestatueRule>().GetPuzzleIsSolved())
             {
                 moveStatueSolved = true;
+                //ugly implement of show camera
+                if (!moveStatueChecked)
+                {
+                    showCamera.SetActive(true);
+                    Invoke("TurnOffCamera", 3);
+                    moveStatueChecked = true;
+                }
+            }
+            else
+            {
+                moveStatueChecked = false;
             }
             if (gravityPuzzleSolved && moveStatueSolved)
             {

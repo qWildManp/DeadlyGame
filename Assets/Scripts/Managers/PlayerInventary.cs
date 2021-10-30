@@ -95,14 +95,14 @@ public class PlayerInventary : MonoBehaviour
     {
         UI_status = !UI_status;
         playerInventaryUI.SetActive(UI_status);
-       
+        /*
         string showStr = "Items \n";
         int i = 0;
         foreach(KeyValuePair<GameObject,int> item in Inventarys)
         {
             showStr += ++i + "[" + item.Key + "], Num: " + item.Value + "\n"; 
         }
-        Debug.Log(showStr);
+        Debug.Log(showStr);*/
     }
     public Dictionary<GameObject, int> GetInventaryList()//return inventary list
     {

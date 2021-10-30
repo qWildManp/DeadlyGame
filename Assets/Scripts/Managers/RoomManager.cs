@@ -247,7 +247,6 @@ public class RoomManager : MonoBehaviour
                                             }
                                         }
                                     }
-                                    Debug.Log("Num of respawn Point List : " + respawnPointsList.Count);
                                     GameObject.Find("ItemManager").GetComponent<ItemManager>().GenerateRoomItems(respawnPointsList, levelRoomList.Key);
                                     Debug.Log("level " + levelRoomList.Key + "over");
                                 }

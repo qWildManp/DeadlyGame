@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 720548610526680827}
   - component: {fileID: -9016628814663481417}
   - component: {fileID: -6739374545599268046}
-  - component: {fileID: 2706493430258575844}
+  - component: {fileID: 8764830320823905379}
   m_Layer: 0
   m_Name: dangerroom1
   m_TagString: Untagged
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &2706493430258575844
+--- !u!54 &8764830320823905379
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

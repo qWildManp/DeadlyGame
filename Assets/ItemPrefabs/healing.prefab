@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 32
   itemName: HEALING
+  description: I can use it to healing myself
 --- !u!65 &8650262583131407055
 BoxCollider:
   m_ObjectHideFlags: 0

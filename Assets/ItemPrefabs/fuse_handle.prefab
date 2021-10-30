@@ -205,6 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 4
   itemName: FUSE HANDLE
+  description: The handle to control something....
 --- !u!1 &7190047327036996674
 GameObject:
   m_ObjectHideFlags: 0

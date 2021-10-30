@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 1
   itemName: LUNA KEY
+  description: A key with a luner decoration, it can be used in some where...
 --- !u!23 &6555018344571890009
 MeshRenderer:
   m_ObjectHideFlags: 0

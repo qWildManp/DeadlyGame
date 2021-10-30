@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class MsgDisplayer : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField]private GameObject Messageblank;
+    [SerializeField]private GameObject Message;
+    private Transform Messageblank;
     [SerializeField] private GameObject PlaceNameblank;
     [SerializeField]private int msgCountdown;
     private float msgCurrentCountDown;
     void Start()
     {
         msgCurrentCountDown = msgCountdown;
+        Messageblank = Message.transform.Find("Msg_text");
     }
 
     // Update is called once per frame
@@ -20,10 +22,12 @@ public class MsgDisplayer : MonoBehaviour
     {
         if(GetMessage() != "")
         {
+            Message.SetActive(true);
             msgCurrentCountDown -= Time.deltaTime;
             if (msgCurrentCountDown <= 0)
             {
                 ClearMessage();
+                Message.SetActive(false);
                 msgCurrentCountDown = msgCountdown;
             }
         }

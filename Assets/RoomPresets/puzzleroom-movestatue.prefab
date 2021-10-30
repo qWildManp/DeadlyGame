@@ -1098,7 +1098,7 @@ GameObject:
   - component: {fileID: -5320421744593411349}
   - component: {fileID: 1623074975920388610}
   - component: {fileID: 6882923145378175868}
-  - component: {fileID: -5775429519877081904}
+  - component: {fileID: -4385399780765846375}
   m_Layer: 0
   m_Name: puzzleroom-movestatue
   m_TagString: Untagged
@@ -1190,6 +1190,8 @@ MonoBehaviour:
   - {fileID: 4287245796022575127}
   - {fileID: 5725457325216049025}
   answerList: []
+  clueSpawnPoint: []
+  cluePrefab: {fileID: 0}
   needLock: 1
   randomAns: 0
 --- !u!114 &6882923145378175868
@@ -1204,7 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &-5775429519877081904
+--- !u!54 &-4385399780765846375
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

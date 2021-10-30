@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 2
   itemName: FLASH LIGHT
+  description: It is a old flash light
 --- !u!64 &6050960663532893053
 MeshCollider:
   m_ObjectHideFlags: 0

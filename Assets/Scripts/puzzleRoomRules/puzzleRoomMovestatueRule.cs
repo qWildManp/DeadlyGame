@@ -5,10 +5,13 @@ using UnityEngine;
 public class puzzleRoomMovestatueRule : puzzleRoomRule
 {
     // Start is called before the first frame update
-    [SerializeField] List<GameObject> Sets;
-    [SerializeField] List<GameObject> answerList;
+    [SerializeField]private List<GameObject> Sets;
+    [SerializeField]private List<GameObject> answerList;
+    [SerializeField]private List<Transform> clueSpawnPoint;
+    [SerializeField] private GameObject cluePrefab;
     [SerializeField] bool needLock;
     [SerializeField] bool randomAns;
+    private GameObject clue;
     private int correctNum;
     void Start()
     {
@@ -26,6 +29,8 @@ public class puzzleRoomMovestatueRule : puzzleRoomRule
                 setRule.SetAnswer(rndAnswer);
                 ansList.Remove(rndAnswer);
             }
+            GenerateClue();
+            SetClueMessage();
         }
         
     }
@@ -49,5 +54,30 @@ public class puzzleRoomMovestatueRule : puzzleRoomRule
             isSolved = true;
         else
             isSolved = false;
+    }
+
+    private void GenerateClue()
+    {
+        if(clueSpawnPoint.Count > 0 && cluePrefab)
+        {
+            int rnd_index = Random.Range(0, clueSpawnPoint.Count);
+            Transform rnd_spawnPoint = clueSpawnPoint[rnd_index];
+            this.clue = Instantiate(cluePrefab);
+            clue.GetComponent<RoomItem>().SetSpawnAt(rnd_spawnPoint);
+        }
+    }
+    private void SetClueMessage()
+    {
+        string msg = "";
+             string ans_1= Sets[0].GetComponent<puzzleSetRule>().GetAnswer().name;
+             string ans_2= Sets[1].GetComponent<puzzleSetRule>().GetAnswer().name;
+             string ans_3= Sets[2].GetComponent<puzzleSetRule>().GetAnswer().name;
+        msg = "This is a dirty notebook. It seems to say how the statues are placed: \n" 
+            + "<color=red>Left</color> shows the way to the door\n"
+            + "<color=red>" + ans_1 + "</color> is on the left; \n"
+            + "<color=red>" + ans_2 +"</color> is the middle one; \n"
+            + "and finally ... the <color=red>" + ans_3 +"</color> is on the right;" ;
+            
+            clue.GetComponent<RoomItem>().SetItemDescribtion(msg);
     }
 }

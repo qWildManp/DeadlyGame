@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 956576566732075126}
   - component: {fileID: 2323722501679491157}
   - component: {fileID: 2140517352035525913}
-  - component: {fileID: -7439132697068619121}
+  - component: {fileID: 8912679289178444829}
   m_Layer: 0
   m_Name: checkpointroom_stair
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &-7439132697068619121
+--- !u!54 &8912679289178444829
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

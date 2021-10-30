@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EndRoomRule : MonoBehaviour
 {
+    [SerializeField] GameObject showCamera;
     [SerializeField] GameObject gravityPuzzleRoom;
     [SerializeField] GameObject moveStatueRoom;
     [SerializeField] GameObject gravityPuzzleLight;
@@ -39,7 +40,10 @@ public class EndRoomRule : MonoBehaviour
         gravityPuzzleLight.transform.GetChild(1).GetComponent<EndRoomLightShining>().SetLightColor(gravityPuzzleSolved);
         moveStatueLight.transform.GetChild(1).GetComponent<EndRoomLightShining>().SetLightColor(moveStatueSolved);
     }
-
+    public void TurnOffCamera()
+    {
+        showCamera.SetActive(false);
+    }
     public void GetTwoPuzzleRooms()
     {
         gravityPuzzleRoom = GameObject.Find("finalpuzzleroom-gavitymazz(Clone)");

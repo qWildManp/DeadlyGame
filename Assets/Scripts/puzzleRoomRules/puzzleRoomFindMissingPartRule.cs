@@ -12,10 +12,8 @@ public class puzzleRoomFindMissingPartRule : puzzleRoomRule
     {
         isSolved = false;
         playerEnter = false;
-        int rnd_index = Random.Range(0, puzzleItemSpawnPoints.Count);
-        Transform rnd_spawnPoint = puzzleItemSpawnPoints[rnd_index];
-        GameObject handle = Instantiate(handlePrefab);
-        handle.GetComponent<RoomItem>().SetSpawnAt(rnd_spawnPoint);
+        GenerateHandle();
+
     }
 
     // Update is called once per frame
@@ -29,6 +27,16 @@ public class puzzleRoomFindMissingPartRule : puzzleRoomRule
         if (isSolved)
         {
             Debug.Log("Puzzle solved");
+        }
+    }
+    private void GenerateHandle()
+    {
+        if(puzzleItemSpawnPoints.Count > 0 && handlePrefab)
+        {
+            int rnd_index = Random.Range(0, puzzleItemSpawnPoints.Count);
+            Transform rnd_spawnPoint = puzzleItemSpawnPoints[rnd_index];
+            GameObject handle = Instantiate(handlePrefab);
+            handle.GetComponent<RoomItem>().SetSpawnAt(rnd_spawnPoint);
         }
     }
 }

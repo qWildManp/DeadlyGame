@@ -24,7 +24,7 @@ public class ItemDisplayer : MonoBehaviour
             transform.Find("ItemNum").gameObject.SetActive(playerHasItem);
             if (playerHasItem)
             {
-                int itemNum = inventary.GetComponent<PlayerInventary>().GetItemNum(itemPrefabe);
+                int itemNum = inventary.GetComponent<PlayerInventary>().GetItem(itemPrefabe).Value;
                 transform.Find("ItemNum").GetComponent<Text>().text = itemNum.ToString();
             }
         }
@@ -32,6 +32,7 @@ public class ItemDisplayer : MonoBehaviour
     }
     public GameObject GetItem()
     {
-        return this.itemPrefabe;
+        GameObject item = inventary.GetComponent<PlayerInventary>().GetItem(itemPrefabe).Key;
+        return item;
     }
 }

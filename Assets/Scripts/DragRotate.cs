@@ -6,6 +6,7 @@ public class DragRotate : MonoBehaviour
 {
     private bool onDrag = false;
     [SerializeField]private float speed = 6f;
+    [SerializeField ] private float Rspeed;
     private float tempSpeed;
     private float axisX;
     private float axisY;
@@ -78,7 +79,8 @@ public class DragRotate : MonoBehaviour
         {
             pitch += axisY * Rigid();
         }
-        gameObject.GetComponent<Rigidbody>().rotation = Quaternion.Euler(pitch, 0, roll);
+        Quaternion quanternion = Quaternion.Euler(pitch, 0, roll);
+        transform.localRotation =Quaternion.RotateTowards(transform.localRotation ,quanternion , Time.deltaTime * Rspeed);
         if (!Input.GetMouseButton(0))
         {
             onDrag = false;

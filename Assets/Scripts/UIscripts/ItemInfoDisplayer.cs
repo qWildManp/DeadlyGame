@@ -41,11 +41,12 @@ public class ItemInfoDisplayer : MonoBehaviour
             transform.Find("BatteryRemain_text").gameObject.SetActive(false);
         }
         Sprite img =  itemDisplayer.GetComponent<Image>().sprite;
-        int item_num = playerInventary.GetItemNum(item);
         Transform target_name = transform.Find("ItemName_text/ItemName");
         Transform target_img = transform.Find("ItemInfoImg");
+        Transform target_describtion = transform.Find("Describtion");
         
         target_img.GetComponent<Image>().sprite = img;
         target_name.GetComponent<Text>().text = item.GetComponent<RoomItem>().GetItemName();
+        target_describtion.GetComponent<Text>().text = item.GetComponent<RoomItem>().GetItemDescribtion();
     }
 }

@@ -32,4 +32,8 @@ public class puzzleSetRule : MonoBehaviour
     {
         this.Answer = answer;
     }
+    public GameObject GetAnswer()
+    {
+        return this.Answer;
+    }
 }

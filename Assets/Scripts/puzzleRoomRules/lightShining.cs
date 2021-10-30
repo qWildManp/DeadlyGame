@@ -26,7 +26,6 @@ public class lightShining : MonoBehaviour
     }
     public void SetLightColor(bool result)
     {
-        Debug.Log(_material);
         if(result)
             _material.SetColor(_colorName, Color.green);
         else

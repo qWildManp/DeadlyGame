@@ -21,7 +21,8 @@ public class puzzleRoomRule : MonoBehaviour
     }
     protected void OnTriggerExit(Collider other)
     {
-
+        if (other.tag == "Player")
+            playerEnter = false;
     }
     protected void SetDoorLock()
     {

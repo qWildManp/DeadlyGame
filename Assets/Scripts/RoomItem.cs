@@ -6,6 +6,7 @@ public class RoomItem : InteractiveItem
 {
     [SerializeField] private RoomItemType itemType;
     [SerializeField] private string itemName;
+    [SerializeField] string description;
     private Transform SpawnAt;
     // Start is called before the first frame update
     void Awake()
@@ -38,6 +39,14 @@ public class RoomItem : InteractiveItem
     public string GetItemName()
     {
         return this.itemName;
+    }
+    public string GetItemDescribtion()
+    {
+        return this.description;
+    }
+    public void SetItemDescribtion(string msg)
+    {
+        this.description = msg;
     }
     public void SetSpawnAt(Transform spawnPoint)
     {

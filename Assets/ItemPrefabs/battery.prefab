@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 16
   itemName: BATTERY
+  description: It is a battery. I can use it to recharge the <color=red>flash light</color>
 --- !u!65 &6348906146892746019
 BoxCollider:
   m_ObjectHideFlags: 0

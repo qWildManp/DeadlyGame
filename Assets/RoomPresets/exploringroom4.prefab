@@ -6385,7 +6385,7 @@ GameObject:
   - component: {fileID: 4209315264310446004}
   - component: {fileID: -8214410005757064658}
   - component: {fileID: 5155664135227337596}
-  - component: {fileID: -7414447081367522996}
+  - component: {fileID: -3623221540001514545}
   m_Layer: 0
   m_Name: exploringroom4
   m_TagString: Untagged
@@ -6488,7 +6488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &-7414447081367522996
+--- !u!54 &-3623221540001514545
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

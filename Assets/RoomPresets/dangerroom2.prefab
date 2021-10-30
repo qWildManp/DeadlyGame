@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6816108506351627512}
   - component: {fileID: 7422898753392394674}
   - component: {fileID: 7001283919635340576}
+  - component: {fileID: 1387583743118403501}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder2
   m_TagString: Untagged
@@ -96,6 +97,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3793069802221852441, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1387583743118403501
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17786734077714362}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 28.301, y: 3.1970003, z: 26.612001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -287.907, y: 88.553, z: 84.359}
+  m_TimeToStationary: 0.5
 --- !u!1 &178922192715487749
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +125,7 @@ GameObject:
   - component: {fileID: 3929372795854477445}
   - component: {fileID: 192480249534868564}
   - component: {fileID: 5732624264133371787}
+  - component: {fileID: 728147170857884191}
   m_Layer: 0
   m_Name: oevn1_group4ovenpCylinder2
   m_TagString: Untagged
@@ -192,6 +210,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8934010029452588307, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &728147170857884191
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178922192715487749}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 8.255, y: 2.02, z: 8.255}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -532.54803, y: 105.114006, z: -353.321}
+  m_TimeToStationary: 0.5
 --- !u!1 &491894691244844520
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +238,7 @@ GameObject:
   - component: {fileID: 296078732907791008}
   - component: {fileID: 5266142892431661354}
   - component: {fileID: 8049372378784355290}
+  - component: {fileID: 1465514272083137129}
   m_Layer: 0
   m_Name: ovenpCylinder4group4_oevn2
   m_TagString: Untagged
@@ -288,6 +323,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1960125381649658060, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1465514272083137129
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491894691244844520}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.557, y: 2.02, z: 11.557}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -298.78802, y: 105.114006, z: -330.401}
+  m_TimeToStationary: 0.5
 --- !u!1 &1164280873035850336
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +351,7 @@ GameObject:
   - component: {fileID: 6084888609574452265}
   - component: {fileID: 3166116977883032330}
   - component: {fileID: 3201869925108084327}
+  - component: {fileID: 9188862188623481630}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder7
   m_TagString: Untagged
@@ -384,6 +436,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3763933553476975794, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &9188862188623481630
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164280873035850336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 28.301, y: 3.1970003, z: 26.612001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 129.29701, y: 91.09801, z: -83.392006}
+  m_TimeToStationary: 0.5
 --- !u!1 &1209755999873483238
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +464,7 @@ GameObject:
   - component: {fileID: 7975428360056827164}
   - component: {fileID: 486850743035970306}
   - component: {fileID: 6937070413197681580}
+  - component: {fileID: 4545550850913602713}
   m_Layer: 0
   m_Name: cabinet_corner_door_group2conor_cabinetdoorpCylinder1handle
   m_TagString: Untagged
@@ -480,6 +549,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6558284069087734141, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &4545550850913602713
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209755999873483238}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.4420002, y: 2.2540002, z: 2.516}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -725.95306, y: 60.437004, z: -286.36502}
+  m_TimeToStationary: 0.5
 --- !u!1 &1623511710020503394
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +577,7 @@ GameObject:
   - component: {fileID: 7451095257632319430}
   - component: {fileID: 54728430344204017}
   - component: {fileID: 4756317453423622501}
+  - component: {fileID: 8306069821020734489}
   m_Layer: 0
   m_Name: oevn_group4ovenpCylinder2
   m_TagString: Untagged
@@ -576,6 +662,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5050162548840346204, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &8306069821020734489
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623511710020503394}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 8.255, y: 2.02, z: 8.255}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -343.23502, y: 105.114006, z: -353.321}
+  m_TimeToStationary: 0.5
 --- !u!1 &2028097454374102451
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +690,7 @@ GameObject:
   - component: {fileID: 6017960876843722647}
   - component: {fileID: 801446277555506194}
   - component: {fileID: 7100569143034120514}
+  - component: {fileID: 6559013763565754906}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablebuttonpCylinder4
   m_TagString: Untagged
@@ -672,6 +775,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2578670479117951091, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &6559013763565754906
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028097454374102451}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.983, y: 2.069, z: 2.805}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -216.311, y: 89.65501, z: 121.27501}
+  m_TimeToStationary: 0.5
 --- !u!1 &2336395037047485908
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +803,7 @@ GameObject:
   - component: {fileID: 7741910044784573655}
   - component: {fileID: 5160093598079139931}
   - component: {fileID: 7360405690091597920}
+  - component: {fileID: 1149087142450631244}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablebutton2pCylinder4
   m_TagString: Untagged
@@ -768,6 +888,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7058966276118070912, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1149087142450631244
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336395037047485908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.983, y: 2.069, z: 2.805}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 61.096004, y: 89.65501, z: -119.162}
+  m_TimeToStationary: 0.5
 --- !u!1 &2338345275437611833
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +916,7 @@ GameObject:
   - component: {fileID: 3262104542833215086}
   - component: {fileID: 5479993453867799164}
   - component: {fileID: 2349067566282207689}
+  - component: {fileID: 8227251521963632958}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder1
   m_TagString: Untagged
@@ -864,6 +1001,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4614704088228731157, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &8227251521963632958
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338345275437611833}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 28.301, y: 3.1970003, z: 26.612001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -175.83101, y: 88.553, z: 84.359}
+  m_TimeToStationary: 0.5
 --- !u!1 &2541152129458578310
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +1029,7 @@ GameObject:
   - component: {fileID: 8155306487518794303}
   - component: {fileID: 1522091820434113648}
   - component: {fileID: 1962483675647874617}
+  - component: {fileID: 8829403537514596000}
   m_Layer: 0
   m_Name: oevn_group4ovenpCylinder1
   m_TagString: Untagged
@@ -960,6 +1114,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8773815315653645527, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &8829403537514596000
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541152129458578310}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.557, y: 2.02, z: 11.557}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -343.23502, y: 105.114006, z: -330.401}
+  m_TimeToStationary: 0.5
 --- !u!1 &3160100950633970051
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +1142,7 @@ GameObject:
   - component: {fileID: 7504475262869823811}
   - component: {fileID: 7624571872307191666}
   - component: {fileID: 2738907461563817125}
+  - component: {fileID: 7265253775159169843}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablebutton3pCylinder4
   m_TagString: Untagged
@@ -1056,6 +1227,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6473706759301649655, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7265253775159169843
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160100950633970051}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.983, y: 2.069, z: 2.805}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 85.114006, y: 89.65501, z: -119.162}
+  m_TimeToStationary: 0.5
 --- !u!1 &3291538350384821254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1255,7 @@ GameObject:
   - component: {fileID: 4431046917946019984}
   - component: {fileID: 7174245475262463353}
   - component: {fileID: 325584444603092602}
+  - component: {fileID: 3904384552704240520}
   m_Layer: 0
   m_Name: oevn2_group4ovenpCylinder2
   m_TagString: Untagged
@@ -1152,6 +1340,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1681806589456518159, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3904384552704240520
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291538350384821254}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 8.255, y: 2.02, z: 8.255}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -260.69, y: 105.114006, z: -353.321}
+  m_TimeToStationary: 0.5
 --- !u!1 &3303770225214018172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1479,7 @@ GameObject:
   - component: {fileID: 6830364131585474915}
   - component: {fileID: 6902241736303181322}
   - component: {fileID: 7167685913931000030}
+  - component: {fileID: 4151872528438632619}
   m_Layer: 0
   m_Name: frigpCube4group3_frig
   m_TagString: Untagged
@@ -1359,6 +1564,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -199752652632802117, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &4151872528438632619
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3465228163275883940}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.0860004, y: 32.43, z: 78.402}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -691.71405, y: 34.745003, z: -1.9340001}
+  m_TimeToStationary: 0.5
 --- !u!1 &3591730090935756240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1592,7 @@ GameObject:
   - component: {fileID: 5193026403063923569}
   - component: {fileID: 7161055749116543466}
   - component: {fileID: 4633045103045093972}
+  - component: {fileID: 7425751969451179734}
   m_Layer: 0
   m_Name: group2pCube1conor_cabinet_cabinet_corner
   m_TagString: Untagged
@@ -1455,6 +1677,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -74202249794201227, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7425751969451179734
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3591730090935756240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 51.738003, y: 51.738003, z: 51.738003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -736.97705, y: 53.632004, z: -332.34702}
+  m_TimeToStationary: 0.5
 --- !u!1 &3650202919867901109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1705,7 @@ GameObject:
   - component: {fileID: 142239818961707937}
   - component: {fileID: 266343139378744415}
   - component: {fileID: 4952556951660276593}
+  - component: {fileID: 7904802041575006782}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablewater_tapFaucet_switchpCylinder5
   m_TagString: Untagged
@@ -1551,6 +1790,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -189400128721673793, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7904802041575006782
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650202919867901109}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 6.293, y: 1.695, z: 5.9170003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 91.978004, y: 93.026, z: 35.085003}
+  m_TimeToStationary: 0.5
 --- !u!1 &3651663058778907226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1818,7 @@ GameObject:
   - component: {fileID: 1376421069363663327}
   - component: {fileID: 6467474179855006724}
   - component: {fileID: 8726041817758225363}
+  - component: {fileID: 3075937247106985571}
   m_Layer: 0
   m_Name: oevn2_group4ovenpCylinder1
   m_TagString: Untagged
@@ -1647,6 +1903,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4536479000852426859, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3075937247106985571
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651663058778907226}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.557, y: 2.02, z: 11.557}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -260.69, y: 105.114006, z: -330.401}
+  m_TimeToStationary: 0.5
 --- !u!1 &3793265909429376534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1931,7 @@ GameObject:
   - component: {fileID: 3414013919497164613}
   - component: {fileID: 2821433609300651625}
   - component: {fileID: 5866467487982121808}
+  - component: {fileID: 6247517365845339012}
   m_Layer: 0
   m_Name: oevn2_group4pCube1oven
   m_TagString: Untagged
@@ -1743,6 +2016,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5017042686254833209, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &6247517365845339012
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3793265909429376534}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 41.067, y: 63.591003, z: 39.532}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -279.584, y: 66.259, z: -346.56702}
+  m_TimeToStationary: 0.5
 --- !u!1 &3801360180890736356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,6 +2044,7 @@ GameObject:
   - component: {fileID: 1816324117996820240}
   - component: {fileID: 8425199407701164536}
   - component: {fileID: 1192947583538395236}
+  - component: {fileID: 8205803995423933364}
   m_Layer: 0
   m_Name: oevn1_group4ovenpCylinder3
   m_TagString: Untagged
@@ -1839,6 +2129,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1957632939207299835, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &8205803995423933364
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801360180890736356}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 8.255, y: 2.02, z: 8.255}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -570.645, y: 105.114006, z: -353.321}
+  m_TimeToStationary: 0.5
 --- !u!1 &3928906694437212589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +2157,7 @@ GameObject:
   - component: {fileID: 7711781319168581132}
   - component: {fileID: 1881239966368390566}
   - component: {fileID: 6965958672070181875}
+  - component: {fileID: 1226407517756489765}
   m_Layer: 0
   m_Name: oevn_group4ovenpCylinder3
   m_TagString: Untagged
@@ -1935,6 +2242,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6323053906334960356, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1226407517756489765
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928906694437212589}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 8.255, y: 2.02, z: 8.255}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -381.333, y: 105.114006, z: -353.321}
+  m_TimeToStationary: 0.5
 --- !u!1 &4051595249238739152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +2270,7 @@ GameObject:
   - component: {fileID: 1536242549519336184}
   - component: {fileID: 8385680839717037880}
   - component: {fileID: 1193146894993804647}
+  - component: {fileID: 4521636536659184516}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tableshelfpCube4
   m_TagString: Untagged
@@ -2031,6 +2355,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8806695897445045153, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &4521636536659184516
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4051595249238739152}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 327.36203, y: 4.546, z: 5.256}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -99.206, y: 219.104, z: -1.2190001}
+  m_TimeToStationary: 0.5
 --- !u!1 &4092763700624153549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2383,7 @@ GameObject:
   - component: {fileID: 2779787909725621522}
   - component: {fileID: 5987602776893719973}
   - component: {fileID: 1402655317311283733}
+  - component: {fileID: 7395005566914643176}
   m_Layer: 0
   m_Name: frig_group3bodyfrig
   m_TagString: Untagged
@@ -2127,6 +2468,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7749117705464969168, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7395005566914643176
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4092763700624153549}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 46.02, y: 104.977005, z: 78.32201}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -742.56006, y: 107.275, z: -1.4530001}
+  m_TimeToStationary: 0.5
 --- !u!1 &4472567921009319366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,6 +2496,7 @@ GameObject:
   - component: {fileID: 6594841433381837293}
   - component: {fileID: 69549897124729283}
   - component: {fileID: 6578328984157672599}
+  - component: {fileID: 4538775117162117718}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablewater_tappCube3Faucet_switch1
   m_TagString: Untagged
@@ -2223,6 +2581,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5067149505237579293, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &4538775117162117718
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472567921009319366}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.308, y: 4.393, z: 3.111}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 48.184002, y: 88.031006, z: 35.009003}
+  m_TimeToStationary: 0.5
 --- !u!1 &4747979394619594626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +2690,7 @@ GameObject:
   - component: {fileID: 3504534878553258358}
   - component: {fileID: 810896092773978415}
   - component: {fileID: 1387244408364172211}
+  - component: {fileID: 492298257805035842}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tableshelfpCylinder9
   m_TagString: Untagged
@@ -2400,6 +2775,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1402222014867556180, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &492298257805035842
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4787574879812429772}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 7.806, y: 74.148, z: 7.3410006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 227.11801, y: 162.59901, z: -1.848}
+  m_TimeToStationary: 0.5
 --- !u!1 &4932705324435425442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,6 +2803,7 @@ GameObject:
   - component: {fileID: 1667450312406134035}
   - component: {fileID: 2955540958869236868}
   - component: {fileID: 4293150249256468042}
+  - component: {fileID: 3999001643458363469}
   m_Layer: 0
   m_Name: frig_group3frigupdoor1
   m_TagString: Untagged
@@ -2496,6 +2888,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -970923676242702861, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3999001643458363469
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4932705324435425442}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.0860004, y: 72.32, z: 38.847}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -691.44305, y: 139.625, z: 37.574}
+  m_TimeToStationary: 0.5
 --- !u!1 &5455057000421592799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,6 +2916,7 @@ GameObject:
   - component: {fileID: 7862326734041792356}
   - component: {fileID: 5017788365201389811}
   - component: {fileID: 6498306422916675820}
+  - component: {fileID: 6916180638472444368}
   m_Layer: 0
   m_Name: oevn1_group4ovenpCylinder1
   m_TagString: Untagged
@@ -2592,6 +3001,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8530453284053705958, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &6916180638472444368
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5455057000421592799}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.557, y: 2.02, z: 11.557}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -532.54803, y: 105.114006, z: -330.401}
+  m_TimeToStationary: 0.5
 --- !u!1 &5479923440950719311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,6 +3029,7 @@ GameObject:
   - component: {fileID: 4232357077575662323}
   - component: {fileID: 6527291552837705236}
   - component: {fileID: 4177228955887849127}
+  - component: {fileID: 430991875018644069}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder3button3
   m_TagString: Untagged
@@ -2688,6 +3114,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5620232908374733407, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &430991875018644069
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479923440950719311}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.3710003, y: 1.2040001, z: 4.11}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 85.114006, y: 92.703, z: -119.162}
+  m_TimeToStationary: 0.5
 --- !u!1 &5556372436229770243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +3142,7 @@ GameObject:
   - component: {fileID: 6443601575778299122}
   - component: {fileID: 4170478495146051583}
   - component: {fileID: 2265938592078312593}
+  - component: {fileID: 5946948249240414096}
   m_Layer: 0
   m_Name: cabinet_corner_door_conor_cabinetpCube2doorgroup2
   m_TagString: Untagged
@@ -2784,6 +3227,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -890724955543490580, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &5946948249240414096
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556372436229770243}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 27.142002, y: 51.504, z: 26.933}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -709.325, y: 53.955, z: -304.808}
+  m_TimeToStationary: 0.5
 --- !u!1 &5775706748561417621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,6 +3255,7 @@ GameObject:
   - component: {fileID: 7353659871008605517}
   - component: {fileID: 4790061050146393885}
   - component: {fileID: 414170055461968507}
+  - component: {fileID: 3337656782066694815}
   m_Layer: 0
   m_Name: oevn1_group4pCube1oven
   m_TagString: Untagged
@@ -2880,6 +3340,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5295558259381398777, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3337656782066694815
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5775706748561417621}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 41.067, y: 63.591003, z: 39.532}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -551.442, y: 66.259, z: -346.56702}
+  m_TimeToStationary: 0.5
 --- !u!1 &5918545833581602562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3003,6 +3479,7 @@ GameObject:
   - component: {fileID: 8200346695415044147}
   - component: {fileID: 6985134181026769671}
   - component: {fileID: 1922033857443311088}
+  - component: {fileID: 7276449636815483278}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder3button2
   m_TagString: Untagged
@@ -3087,6 +3564,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8772748271709451195, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7276449636815483278
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6436684339181146771}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.3710003, y: 1.2040001, z: 4.11}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 61.096004, y: 92.703, z: -119.162}
+  m_TimeToStationary: 0.5
 --- !u!1 &6503564888588182744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,6 +3592,7 @@ GameObject:
   - component: {fileID: 6210188918061660120}
   - component: {fileID: 7369169700573113257}
   - component: {fileID: 7358472233052827219}
+  - component: {fileID: 206868058876406035}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablewater_tapFaucet_switch1pCylinder5
   m_TagString: Untagged
@@ -3183,6 +3677,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3536981732671345606, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &206868058876406035
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6503564888588182744}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 6.293, y: 1.695, z: 5.9170003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 48.144, y: 93.026, z: 35.085003}
+  m_TimeToStationary: 0.5
 --- !u!1 &6661601744023940791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3273,6 +3783,7 @@ GameObject:
   - component: {fileID: 1628966582863594408}
   - component: {fileID: 4723571111993547171}
   - component: {fileID: 8996653187769756779}
+  - component: {fileID: 3452653993402793579}
   m_Layer: 0
   m_Name: oevn2_group4ovenpCylinder3
   m_TagString: Untagged
@@ -3357,6 +3868,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -356326084550416600, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3452653993402793579
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6911921383917804291}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 8.255, y: 2.02, z: 8.255}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -298.78702, y: 105.114006, z: -353.321}
+  m_TimeToStationary: 0.5
 --- !u!1 &6925840033186365617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,6 +3896,7 @@ GameObject:
   - component: {fileID: 2179466183409736264}
   - component: {fileID: 7906253646494632724}
   - component: {fileID: 3463464123165402970}
+  - component: {fileID: 2891858823906593152}
   m_Layer: 0
   m_Name: frig_group3frigupdoor
   m_TagString: Untagged
@@ -3453,6 +3981,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6595910432476163999, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &2891858823906593152
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925840033186365617}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.0860004, y: 72.32, z: 39.264004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -691.44305, y: 139.625, z: -39.991}
+  m_TimeToStationary: 0.5
 --- !u!1 &6993417857567365838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3465,6 +4009,7 @@ GameObject:
   - component: {fileID: 5040824296535917723}
   - component: {fileID: 9192262440223884393}
   - component: {fileID: 300266220715005560}
+  - component: {fileID: 7355371093635792797}
   m_Layer: 0
   m_Name: oevn_group4pCube1oven
   m_TagString: Untagged
@@ -3549,6 +4094,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8296718057656644497, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7355371093635792797
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6993417857567365838}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 41.067, y: 63.591003, z: 39.532}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -362.12903, y: 66.259, z: -346.56702}
+  m_TimeToStationary: 0.5
 --- !u!1 &7005157283339074060
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +4122,7 @@ GameObject:
   - component: {fileID: 9002213465667885331}
   - component: {fileID: 2186329854801958498}
   - component: {fileID: 8826094922296604963}
+  - component: {fileID: 3011506536691015462}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder3button1
   m_TagString: Untagged
@@ -3645,6 +4207,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8010760234047951654, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3011506536691015462
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7005157283339074060}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.3710003, y: 1.2040001, z: 4.11}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -244.6, y: 92.703, z: 121.27501}
+  m_TimeToStationary: 0.5
 --- !u!1 &7058705966696510445
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,6 +4235,7 @@ GameObject:
   - component: {fileID: 4290134430913800849}
   - component: {fileID: 318677883485909832}
   - component: {fileID: 324995920428135004}
+  - component: {fileID: 1654249840540169318}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder6
   m_TagString: Untagged
@@ -3741,6 +4320,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7171271479168560684, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1654249840540169318
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058705966696510445}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 28.301, y: 3.1970003, z: 26.612001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 19.723001, y: 91.09801, z: -81.561005}
+  m_TimeToStationary: 0.5
 --- !u!1 &7276296287491176500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,6 +4348,7 @@ GameObject:
   - component: {fileID: 7648955469871609954}
   - component: {fileID: 8473856485915561337}
   - component: {fileID: 5575844738918910741}
+  - component: {fileID: 7156016449853914934}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablebutton1pCylinder4
   m_TagString: Untagged
@@ -3837,6 +4433,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2778921979106530503, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7156016449853914934
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7276296287491176500}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.983, y: 2.069, z: 2.805}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -244.6, y: 89.65501, z: 121.27501}
+  m_TimeToStationary: 0.5
 --- !u!1 &7475076586407429635
 GameObject:
   m_ObjectHideFlags: 0
@@ -3849,6 +4461,7 @@ GameObject:
   - component: {fileID: 7135749115909734258}
   - component: {fileID: 6508356907247217825}
   - component: {fileID: 2968149733409425596}
+  - component: {fileID: 95714350027126417}
   m_Layer: 0
   m_Name: ovenpCylinder4group4_oevn1
   m_TagString: Untagged
@@ -3933,6 +4546,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2473463503660091278, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &95714350027126417
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475076586407429635}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.557, y: 2.02, z: 11.557}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -570.645, y: 105.114006, z: -330.401}
+  m_TimeToStationary: 0.5
 --- !u!1 &7497105343148319311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3947,6 +4576,8 @@ GameObject:
   - component: {fileID: 5541562417469302819}
   - component: {fileID: 4127930283266572876}
   - component: {fileID: 4303848960980932401}
+  - component: {fileID: -8540435562364338501}
+  - component: {fileID: 1368087325873261107}
   m_Layer: 0
   m_Name: dangerroom2
   m_TagString: Untagged
@@ -4050,6 +4681,49 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8540435562364338501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497105343148319311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4abfa16db9d114ec0ae6e10e4a566cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NavMesh: {fileID: 0}
+  m_FollowTransform: 0
+--- !u!114 &1368087325873261107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497105343148319311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 127
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 3e1c17618c4c8114487e130efb9760ef, type: 2}
 --- !u!1 &7902343119678013573
 GameObject:
   m_ObjectHideFlags: 0
@@ -4062,6 +4736,7 @@ GameObject:
   - component: {fileID: 8576344505872913731}
   - component: {fileID: 4279425920343374882}
   - component: {fileID: 6014676805807708878}
+  - component: {fileID: 3494779913144109799}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCube2
   m_TagString: Untagged
@@ -4146,6 +4821,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7027933332375343567, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3494779913144109799
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902343119678013573}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 50.833004, y: 15.200001, z: 34.724003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 72.616005, y: 56.929, z: 103.33501}
+  m_TimeToStationary: 0.5
 --- !u!1 &8144478819044584240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4158,6 +4849,7 @@ GameObject:
   - component: {fileID: 5949465701876806245}
   - component: {fileID: 6014054641574928184}
   - component: {fileID: 297073232619957759}
+  - component: {fileID: 7679316296535287986}
   m_Layer: 0
   m_Name: kitchen_table_group1pCube1kitchen_table
   m_TagString: Untagged
@@ -4242,6 +4934,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8425360411802770866, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7679316296535287986
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144478819044584240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 360.497, y: 45.202003, z: 147.257}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -99.025, y: 46.571003, z: -0.707}
+  m_TimeToStationary: 0.5
 --- !u!1 &8170550277715335209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4254,6 +4962,7 @@ GameObject:
   - component: {fileID: 2039691090369247024}
   - component: {fileID: 2246488373603488967}
   - component: {fileID: 7935517932050655082}
+  - component: {fileID: 984676423366165631}
   m_Layer: 0
   m_Name: cabinet_corner_group2conor_cabinetdoorhandlepSphere1_door
   m_TagString: Untagged
@@ -4338,6 +5047,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1786218396244007433, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &984676423366165631
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170550277715335209}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.345, y: 3.1000001, z: 2.5300002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -724.247, y: 60.260002, z: -284.785}
+  m_TimeToStationary: 0.5
 --- !u!1 &8514664010535068843
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,6 +5075,7 @@ GameObject:
   - component: {fileID: 4922927666331075997}
   - component: {fileID: 6783607784149206612}
   - component: {fileID: 3984682997845230133}
+  - component: {fileID: 5890341894560117131}
   m_Layer: 0
   m_Name: kitchen_tablewater_tappCube3Faucet_switchgroup1_kitchen_table
   m_TagString: Untagged
@@ -4434,6 +5160,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5858313255021127002, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &5890341894560117131
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514664010535068843}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.308, y: 4.393, z: 3.111}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 92.018005, y: 88.031006, z: 35.009003}
+  m_TimeToStationary: 0.5
 --- !u!1 &8812543841867378613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,6 +5188,7 @@ GameObject:
   - component: {fileID: 2602349470121259829}
   - component: {fileID: 7794613353876316098}
   - component: {fileID: 429342838095693383}
+  - component: {fileID: 1339556296467473135}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder3button
   m_TagString: Untagged
@@ -4530,6 +5273,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8526268432111906261, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1339556296467473135
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8812543841867378613}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.3710003, y: 1.2040001, z: 4.11}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -216.311, y: 92.703, z: 121.27501}
+  m_TimeToStationary: 0.5
 --- !u!1 &9018577989573728804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +5301,7 @@ GameObject:
   - component: {fileID: 807128975894897019}
   - component: {fileID: 2624356575358442550}
   - component: {fileID: 8042449303905261340}
+  - component: {fileID: 3671535267288053772}
   m_Layer: 0
   m_Name: ovenpCylinder4group4_oevn
   m_TagString: Untagged
@@ -4626,6 +5386,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4702314527556565330, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &3671535267288053772
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9018577989573728804}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.557, y: 2.02, z: 11.557}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -381.333, y: 105.114006, z: -330.401}
+  m_TimeToStationary: 0.5
 --- !u!1 &9042434071355716152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4638,6 +5414,7 @@ GameObject:
   - component: {fileID: 6705087604588678983}
   - component: {fileID: 4665194944314549234}
   - component: {fileID: 1214327195485559023}
+  - component: {fileID: 1976464066231178073}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablewater_tapwater_tap
   m_TagString: Untagged
@@ -4722,6 +5499,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5132516648361533846, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &1976464066231178073
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042434071355716152}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.9180002, y: 18.173, z: 20.026001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 69.857, y: 99.811005, z: 51.687004}
+  m_TimeToStationary: 0.5
 --- !u!1 &9051713766552220736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,6 +5527,7 @@ GameObject:
   - component: {fileID: 8332795459388942937}
   - component: {fileID: 5972019913639709370}
   - component: {fileID: 2265481596400998690}
+  - component: {fileID: 7798849854645082874}
   m_Layer: 0
   m_Name: kitchen_table_group1kitchen_tablepCylinder8shelf
   m_TagString: Untagged
@@ -4818,6 +5612,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8093854161307219631, guid: 4d2521914f1f8e24abe15d605e8dbd2d, type: 3}
+--- !u!208 &7798849854645082874
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051713766552220736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 7.807, y: 74.148, z: 7.3410006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -426.49402, y: 162.59901, z: -1.848}
+  m_TimeToStationary: 0.5
 --- !u!1001 &533801802346290008
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -49,6 +49,10 @@ public class PlayerInventary : MonoBehaviour
                     {
                         prefabe.GetComponent<RoomItem>().SetItemDescribtion(item.GetComponent<RoomItem>().GetItemDescribtion());
                     }
+                    if(item.GetComponent<RoomItem>().GetItemType() == RoomItemType.KEY)
+                    {
+                        UI.GetComponent<MsgDisplayer>().ClearSecondObjective();
+                    }
                     Inventarys.Add(prefabe, 1);
                 }
                 break;
@@ -133,6 +137,20 @@ public class PlayerInventary : MonoBehaviour
             string itemName = itemInfo.GetItemName();
             if(itemName == requirement && item.Value > 0)
             {
+                return true;
+            }
+        }
+        return false;
+    }
+    public bool UseItem(string requirement)
+    {
+        foreach (KeyValuePair<GameObject, int> item in Inventarys)
+        {
+            RoomItem itemInfo = item.Key.GetComponent<RoomItem>();
+            string itemName = itemInfo.GetItemName();
+            if (itemName == requirement && item.Value > 0)
+            {
+                Inventarys[item.Key] -= 1;
                 return true;
             }
         }

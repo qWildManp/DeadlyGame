@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 9201265635149081372}
   - component: {fileID: 4622101905381658709}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: KillerForbidArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1167,8 +1167,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5273510328109235153}
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.1, y: 20.4, z: -210.3}
-  m_LocalScale: {x: 192.68135, y: 175.06937, z: 141.38602}
+  m_LocalPosition: {x: 6.1, y: 97, z: -228.7}
+  m_LocalScale: {x: 192.68135, y: 206.94951, z: 186.2136}
   m_Children: []
   m_Father: {fileID: 7334870101366289014}
   m_RootOrder: 3
@@ -1473,8 +1473,6 @@ GameObject:
   - component: {fileID: 7273785940981835554}
   - component: {fileID: 7084847096482359407}
   - component: {fileID: 7121727490584100482}
-  - component: {fileID: 2111955527437825922}
-  - component: {fileID: 472617566445913932}
   m_Layer: 0
   m_Name: cabinet_small_cabinet_smallgroup1cabinetcabinet_body1
   m_TagString: Untagged
@@ -1545,35 +1543,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2111955527437825922
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5960170856559589530}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 92.96657, y: 100.73959, z: 65.49408}
-  m_Center: {x: 0.9417267, y: 46.125008, z: -188.7591}
---- !u!208 &472617566445913932
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5960170856559589530}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 46.483, y: 38.705, z: 32.747}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0.94200003, y: 57.79, z: -188.759}
-  m_TimeToStationary: 0.5
 --- !u!1 &6646428165574969756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,7 +2140,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 3.3333333
+  m_VoxelSize: 5
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: af98da55275bf0347a227a53b939d1fc, type: 2}
 --- !u!1 &8434654014515091261
@@ -2684,6 +2653,10 @@ PrefabInstance:
     - target: {fileID: 3376066558454241845, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
       propertyPath: m_Name
       value: cabinet_drawer_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780489350982963752, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}

@@ -52,6 +52,8 @@ public class DoorBehavior : MonoBehaviour
                 {
 
                     UI.GetComponent<MsgDisplayer>().SetMessage("The door is locked, I need " + unlockRequirement);
+                    if (unlockRequirement == "LUNA KEY")
+                        UI.GetComponent<MsgDisplayer>().SetSecondObjective("Find the LUNA KEY");
                 }
             }
             else

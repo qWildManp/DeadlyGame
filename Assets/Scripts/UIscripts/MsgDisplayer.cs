@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class MsgDisplayer : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class MsgDisplayer : MonoBehaviour
     private Transform Messageblank;
     [SerializeField] private GameObject PlaceNameblank;
     [SerializeField]private int msgCountdown;
+    [SerializeField] private GameObject MainGameObjectives;
+    [SerializeField] private GameObject SecondGameObjectives;
+    
     private float msgCurrentCountDown;
     void Start()
     {
@@ -71,5 +75,43 @@ public class MsgDisplayer : MonoBehaviour
     public void ClearMessage()
     {
         Messageblank.GetComponent<Text>().text = "";
+    }
+    public void SetMainObjective(string objective_text)//set main game objective
+    {
+        string previousObjective = MainGameObjectives.GetComponent<Text>().text;
+        string modify_text = StrikeThrough(previousObjective);
+        MainGameObjectives.GetComponent<Text>().text = modify_text;
+        MainGameObjectives.GetComponent<Text>().DOFade(0, 3);
+        StartCoroutine(SetNewGameObjectiveText(objective_text));
+    }
+    IEnumerator SetNewGameObjectiveText(string new_text)//set new game objetive text
+    {
+        yield return new WaitForSeconds(3.0f);
+        MainGameObjectives.GetComponent<Text>().text = "";
+        MainGameObjectives.GetComponent<Text>().DOFade(255, 1);
+        MainGameObjectives.GetComponent<Text>().DOText(new_text,3);
+    }
+    public void SetSecondObjective(string objective_text)//set the secondary game objective
+    {
+        SecondGameObjectives.GetComponent<Text>().text = "";
+        SecondGameObjectives.GetComponent<Text>().DOFade(255, 1);
+        SecondGameObjectives.GetComponent<Text>().DOText(objective_text, 3);
+    }
+    public void ClearSecondObjective()//clear the secondary game objective
+    {
+        string previousObjective = SecondGameObjectives.GetComponent<Text>().text;
+        string modify_text = StrikeThrough(previousObjective);
+        SecondGameObjectives.GetComponent<Text>().text = modify_text;
+        SecondGameObjectives.GetComponent<Text>().DOFade(0, 3);
+    }
+
+    public string StrikeThrough(string s)
+    {
+        string strikethrough = "";
+        foreach (char c in s)
+        {
+            strikethrough = strikethrough + c + '\u0336';
+        }
+        return strikethrough;
     }
 }

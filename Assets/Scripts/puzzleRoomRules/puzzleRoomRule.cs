@@ -41,7 +41,7 @@ public class puzzleRoomRule : MonoBehaviour
                     Door1.GetComponent<DoorBehavior>().SetDoorLock(true, "SOLVE THE PUZZLE");
                     Door2.GetComponent<DoorBehavior>().SetDoorLock(true, "SOLVE THE PUZZLE");
                 }
-                else
+                else if(!playerEnter || isSolved)
                 {
                     Door1.GetComponent<DoorBehavior>().SetDoorLock(false, "");
                     Door2.GetComponent<DoorBehavior>().SetDoorLock(false, "");

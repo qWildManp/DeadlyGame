@@ -73,6 +73,7 @@ public class fuseboxBehavior : InteractiveItem
         if(GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().CheckItem("FUSE HANDLE"))
         {
             msg = "";
+            GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().UseItem("FUSE HANDLE");
             this.hasHandle = true;
         }
         else

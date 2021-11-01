@@ -2355,6 +2355,8 @@ GameObject:
   - component: {fileID: 7097060359877591954}
   - component: {fileID: 7760282881382204208}
   - component: {fileID: 2322323522112249819}
+  - component: {fileID: 3456672213629735872}
+  - component: {fileID: 6127976865206675206}
   m_Layer: 0
   m_Name: finalpuzzleroom-movestatue
   m_TagString: Untagged
@@ -2448,6 +2450,7 @@ MonoBehaviour:
   cluePrefab: {fileID: 1924614181660459341, guid: c271be7819ea09243b6a0ed8fc74f821, type: 3}
   needLock: 0
   randomAns: 1
+  isFinalPuzzle: 1
 --- !u!114 &7760282881382204208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2476,6 +2479,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &3456672213629735872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035171686179765291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 970.7113, y: 288.26212, z: 486.42722}
+  m_Center: {x: -8.592529, y: 142.24605, z: 2.8296661}
+--- !u!65 &6127976865206675206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035171686179765291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 430.61182, y: 288.26212, z: 974.32434}
+  m_Center: {x: -723.84973, y: 142.24605, z: -2.3172455}
 --- !u!1 &7911196549006963469
 GameObject:
   m_ObjectHideFlags: 0

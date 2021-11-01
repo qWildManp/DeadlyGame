@@ -2335,6 +2335,7 @@ GameObject:
   - component: {fileID: 7062535280850423397}
   - component: {fileID: 1577266206111798882}
   - component: {fileID: 2548211399392984337}
+  - component: {fileID: 8998857232407188541}
   m_Layer: 0
   m_Name: finalpuzzleroom-gavitymazz
   m_TagString: Untagged
@@ -2431,6 +2432,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8998857232407188541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4999843460258038268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 578.6575, y: 282.76437, z: 582.00256}
+  m_Center: {x: 2.0426025, y: 149.0848, z: -0.994751}
 --- !u!1 &5143347988988536156
 GameObject:
   m_ObjectHideFlags: 0

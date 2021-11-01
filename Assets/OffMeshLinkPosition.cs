@@ -22,19 +22,14 @@ public class OffMeshLinkPosition : MonoBehaviour
     void TestHit()
     {
         int layerMask = 1 << LayerMask.NameToLayer("Ground");
-        Debug.Log("Mask:" + layerMask);
         //layerMask = ~layerMask;
         RaycastHit hitResult;
         Debug.DrawRay(transform.position, Vector3.down * 500f);
         if(Physics.Raycast(transform.position, Vector3.down, out hitResult, 500f, layerMask)){
             
-            //Debug.Log(hitResult.collider.gameObject.name);
             hasCheckedGroundPosition = true;
-            transform.position = hitResult.point;
+            transform.position =hitResult.point;
+            transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y + 0.1f, transform.localPosition.z);//adjust the navmesh connection point
         }
-        else{
-            Debug.Log("Nothing hit");
-        }
-        
     }
 }

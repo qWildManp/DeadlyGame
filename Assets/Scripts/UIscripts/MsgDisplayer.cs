@@ -10,9 +10,10 @@ public class MsgDisplayer : MonoBehaviour
     [SerializeField]private GameObject Message;
     private Transform Messageblank;
     [SerializeField] private GameObject PlaceNameblank;
-    [SerializeField]private int msgCountdown;
+    [SerializeField] private int msgCountdown;
     [SerializeField] private GameObject MainGameObjectives;
     [SerializeField] private GameObject SecondGameObjectives;
+    [SerializeField] private GameObject Hintblank;
     
     private float msgCurrentCountDown;
     void Start()
@@ -114,4 +115,14 @@ public class MsgDisplayer : MonoBehaviour
         }
         return strikethrough;
     }
+
+    public void SetHint(string msg)
+    {
+        Hintblank.GetComponent<Text>().text = msg;
+    }
+    public void ClearHint()
+    {
+        Hintblank.GetComponent<Text>().text = "";
+    }
+    
 }

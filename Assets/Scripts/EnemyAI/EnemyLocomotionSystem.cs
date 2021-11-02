@@ -101,6 +101,7 @@ public class EnemyLocomotionSystem : MonoBehaviour
             Vector3 targetVelocoty = enemyRigiBody.velocity;
 
             navMeshAgent.enabled = true; //activate navmesh agent
+            //TODO : killer position does not change
             bool result = navMeshAgent.SetDestination(currentTarget.transform.position); //move to player
             Debug.Log("Find path :" + result);
             enemyRigiBody.velocity = targetVelocoty;

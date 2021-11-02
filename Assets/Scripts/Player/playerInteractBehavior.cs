@@ -9,7 +9,8 @@ public class playerInteractBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventary = GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>();
+        if(GameObject.Find("PlayerInventary"))
+            inventary = GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>();
         flashLight = transform.GetChild(2).GetChild(0).GetChild(0);
         flashLight.gameObject.SetActive(false);
     }
@@ -19,7 +20,7 @@ public class playerInteractBehavior : MonoBehaviour
     {
         Ray ray = GetComponent<PlayerRayCast>().GetPlayerRay();
         RaycastHit hit;
-        if (inventary.CheckItem("FLASH LIGHT"))// if player has flash light,activate the flash light 
+        if (inventary && inventary.CheckItem("FLASH LIGHT"))// if player has flash light,activate the flash light 
         {
             flashLight.gameObject.SetActive(true);
             flashLight.gameObject.GetComponent<FlashLightBehavior>().inPlayerHand = true;
@@ -29,7 +30,8 @@ public class playerInteractBehavior : MonoBehaviour
             inventary.ChangePlayerInventaryDisplay();
         }
         //if(Input.GetKeyDown(KeyCode.P))//Show player Progess
-        if (Physics.Raycast(ray,out hit, 200))//player pick item
+        LayerMask layerMask = ~(1 << 9);
+        if (Physics.Raycast(ray,out hit, 200,layerMask))//player pick item
         {
             GameObject obj = hit.collider.gameObject;
             RoomItem item = obj.GetComponent<RoomItem>();

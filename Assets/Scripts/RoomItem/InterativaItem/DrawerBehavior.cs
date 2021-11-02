@@ -30,7 +30,8 @@ public class DrawerBehavior : InteractiveItem
             {
                 Ray ray = player.GetComponent<PlayerRayCast>().GetPlayerRay();
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, 120))
+                LayerMask layerMask = ~(1 << 9);
+                if (Physics.Raycast(ray, out hit, 120,layerMask))
                 {
                     if (hit.collider.gameObject == gameObject)
                     {

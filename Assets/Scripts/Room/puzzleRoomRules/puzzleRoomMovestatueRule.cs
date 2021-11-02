@@ -87,7 +87,6 @@ public class puzzleRoomMovestatueRule : puzzleRoomRule
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit : " + other.name);
         if (other.tag == "Player" && this.isFinalPuzzle &&!hasShowObjective)
         {
             UI.GetComponent<MsgDisplayer>().SetSecondObjective("Try to find out the correct position of statues");

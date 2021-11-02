@@ -22,7 +22,6 @@ public class OffMeshLinkPosition : MonoBehaviour
     void TestHit()
     {
         int layerMask = 1 << LayerMask.NameToLayer("Ground");
-        //layerMask = ~layerMask;
         RaycastHit hitResult;
         Debug.DrawRay(transform.position, Vector3.down * 500f);
         if(Physics.Raycast(transform.position, Vector3.down, out hitResult, 500f, layerMask)){

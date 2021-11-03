@@ -14,7 +14,7 @@ public class EnemyLocomotionSystem : MonoBehaviour
     public float distanceFromTarget;
     public float stoppingDistance = 40f;
 
-    public float rotationSpeed = 15;
+    public float rotationSpeed = 25;
     private void Awake()
     {
         enemyManager = GetComponent<EnemyManager>();
@@ -43,7 +43,6 @@ public class EnemyLocomotionSystem : MonoBehaviour
                 Debug.Log("angle" + viewableAngle);
                 if(viewableAngle > enemyManager.minDetectionAngle && viewableAngle < enemyManager.maxDetectionAngle)
                 {
-                    Debug.Log("Find Player");
                     currentTarget = collider.GetComponentInParent<PlayerStats>();
                 }
 
@@ -52,6 +51,8 @@ public class EnemyLocomotionSystem : MonoBehaviour
     }
     public void HandleMoveToTarget()
     {
+        if (enemyManager.isPerformingAction)
+            return;
         Vector3 targetDirection = currentTarget.transform.position - transform.position;
         distanceFromTarget = Vector3.Distance(currentTarget.transform.position, transform.position);
         float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
@@ -63,12 +64,17 @@ public class EnemyLocomotionSystem : MonoBehaviour
         }
         else
         {
+            Debug.Log("actual dis" + distanceFromTarget);
+            Debug.Log("close enough " + (distanceFromTarget <= stoppingDistance));
+            
             if(distanceFromTarget > stoppingDistance)//if distance is not close set killer walk animation
             {
                 enemyAnimatorManager.animator.SetFloat("Vertical", 1, 0.1f, Time.deltaTime);
+              
             }
             else if(distanceFromTarget <= stoppingDistance)//if distance is close enough set killer stop animation
             {
+                Debug.Log("stop");
                 enemyAnimatorManager.animator.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
             }
         }
@@ -79,6 +85,7 @@ public class EnemyLocomotionSystem : MonoBehaviour
 
     private void HandleRotateTowardsTarget()
     {
+        Debug.Log("Handle rotate");
         //Rotate manually
         if (enemyManager.isPerformingAction)// if killer is performing stop our move
         {
@@ -103,9 +110,9 @@ public class EnemyLocomotionSystem : MonoBehaviour
             navMeshAgent.enabled = true; //activate navmesh agent
             //TODO : killer position does not change
             bool result = navMeshAgent.SetDestination(currentTarget.transform.position); //move to player
-            Debug.Log("Find path :" + result);
-            enemyRigiBody.velocity = targetVelocoty;
+            enemyRigiBody.velocity = navMeshAgent.desiredVelocity;
             transform.rotation = Quaternion.Slerp(transform.rotation, navMeshAgent.transform.rotation, rotationSpeed / Time.deltaTime);
         }
+        Debug.Log("Finish");
     }
 }

@@ -4,55 +4,52 @@ using UnityEngine;
 
 public class attackState : State
 {
-    public pursueState pursueState;
+    public combatState combatState;
     public EnemyAttackAction[] enemyAttacks;
     public EnemyAttackAction currentAttack;
     public override State Tick(EnemyManager enemyManager, EnemyAnimatorManager enemyAnimatorManager)
     {
-        enemyManager.distanceFromTarget = Vector3.Distance(enemyManager.currentTarget.transform.position, enemyManager.transform.position);
+        float distanceFromTarget = Vector3.Distance(enemyManager.currentTarget.transform.position, enemyManager.transform.position);
         Vector3 targetDirection = enemyManager.currentTarget.transform.position - transform.position;
         float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
         //check for attack range
-        if(enemyManager.currentRecoveryTime <=0 && enemyManager.distanceFromTarget <= enemyManager.maxAttackRange)
-        {
-            if (enemyManager.isPerformingAction)
-                return this;
+        if (enemyManager.isPerformingAction)
+            return this;
 
-            if (currentAttack != null)
+
+        if (currentAttack != null)
+        {
+            Debug.Log("test1");
+            Debug.Log(enemyManager.distanceFromTarget);
+            if (enemyManager.distanceFromTarget < currentAttack.minDistanceNeedToAttack)
             {
-                GetNewAttack(enemyManager);
-                if (enemyManager.distanceFromTarget < currentAttack.minDistanceNeedToAttack)
+                Debug.Log("test2");
+                return this;
+            }
+            else if (enemyManager.distanceFromTarget < currentAttack.maxDistanceNeedToAttack)
+            {
+                //if within range do attack
+                if (enemyManager.viewableAngle <= currentAttack.maxAttackAngle
+                    && enemyManager.viewableAngle >= currentAttack.minAttackAngle)
                 {
-                    return this;
-                }
-                else if (enemyManager.distanceFromTarget < currentAttack.minDistanceNeedToAttack)
-                {
-                    //if within range do attack
-                    if (enemyManager.viewableAngle <= currentAttack.maxAttackAngle
-                        && enemyManager.viewableAngle >= currentAttack.minAttackAngle)
+                    if (enemyManager.currentRecoveryTime <= 0 && enemyManager.isPerformingAction == false)
                     {
-                        if (enemyManager.currentRecoveryTime <= 0 && enemyManager.isPerformingAction == false)
-                        {
-                            enemyAnimatorManager.animator.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
-                            enemyAnimatorManager.PlayTargetAnimation(currentAttack.actionAnimation, true);
-                            enemyManager.currentRecoveryTime = currentAttack.recoveryTime;
-                            currentAttack = null;
-                        }
+                        enemyAnimatorManager.animator.SetFloat("Vertical", 0);
+                        enemyAnimatorManager.PlayTargetAnimation(currentAttack.actionAnimation, true);
+                        enemyManager.isPerformingAction = true;
+                        enemyManager.currentRecoveryTime = currentAttack.recoveryTime;
+                        currentAttack = null;
+                        return combatState;
                     }
                 }
             }
-            else
-            {
-                GetNewAttack(enemyManager);
-            }
-            return this;
         }
-        else if(enemyManager.distanceFromTarget > enemyManager.maxAttackRange)
+        else
         {
-            return pursueState;
+            Debug.Log("GetNEW Attack");
+            GetNewAttack(enemyManager);
         }
-        // if in attack
-        return this;
+        return combatState;
     }
     private void GetNewAttack(EnemyManager enemyManager)
     {

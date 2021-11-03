@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class pursueState : State
 {
-    public attackState attackState;
+    public combatState combatState;
     public idleState idleState;
     public override State Tick(EnemyManager enemyManager, EnemyAnimatorManager enemyAnimatorManager)
     {
@@ -29,14 +29,14 @@ public class pursueState : State
             }
         }
         HandleRotateTowardsTarget(enemyManager);
-        enemyManager.navMeshAgent.nextPosition = transform.position;
-        //enemyManager.navMeshAgent.transform.localPosition = Vector3.zero;
-        //enemyManager.navMeshAgent.transform.localRotation = Quaternion.identity;
+        //enemyManager.navMeshAgent.nextPosition = transform.position;
+        enemyManager.navMeshAgent.transform.localPosition = Vector3.zero;
+        enemyManager.navMeshAgent.transform.localRotation = Quaternion.identity;
         //chase target
         //if within attack range,switch to attack
         if(enemyManager.distanceFromTarget <= enemyManager.maxAttackRange)
         {
-            return attackState;
+            return combatState;
         }
         if(enemyManager.distanceFromTarget >= enemyManager.maxDetectionRange)// if player out of the max dectection range
         {

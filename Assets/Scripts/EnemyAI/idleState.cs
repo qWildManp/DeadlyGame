@@ -28,6 +28,7 @@ public class idleState : State
 
             }
         }
+        /*
         if (enemyManager.navMeshAgent.remainingDistance > enemyManager.navMeshAgent.stoppingDistance)
         {
             enemyAnimatorManager.animator.SetFloat("Vertical", 1, 0.1f, Time.deltaTime);
@@ -46,7 +47,7 @@ public class idleState : State
                     enemyManager.navMeshAgent.nextPosition = transform.position;
                 }
             }
-        } 
+        } */
         //Handle Switch to next state
         if (enemyManager.currentTarget != null)
         {

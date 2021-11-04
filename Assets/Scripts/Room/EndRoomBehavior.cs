@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndRoomRule : MonoBehaviour
+public class EndRoomBehavior: MonoBehaviour
 {
     GameObject UI;
     [SerializeField] GameObject showCamera;

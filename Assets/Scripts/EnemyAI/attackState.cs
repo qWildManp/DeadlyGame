@@ -46,7 +46,6 @@ public class attackState : State
         }
         else
         {
-            Debug.Log("GetNEW Attack");
             GetNewAttack(enemyManager);
         }
         return combatState;

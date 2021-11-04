@@ -118,13 +118,21 @@ public class DoorBehavior : MonoBehaviour
             this.player = other.transform.parent.gameObject;
             playerEnter = true;
         }
+        else if(other.tag == "Killer" && !islocked)// if killer approach the door,door will automaticlly open
+        {
+            animator.SetBool("DoorOpen", true);
+        }
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)// if killer approach the door,door will automaticlly open
     {
         if (other.tag == "Player")
         {
             this.player = null;
             playerEnter = false;
+        }
+        else if (other.tag == "Killer")
+        {
+            animator.SetBool("DoorOpen", false);
         }
     }
     public void ChangeDoorStatus()

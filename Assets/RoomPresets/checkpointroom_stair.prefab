@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3386826439929320623}
   - component: {fileID: -6147600492948062595}
-  - component: {fileID: 4144693338395491502}
   - component: {fileID: -5175756032886332108}
+  - component: {fileID: 2140517352035525913}
+  - component: {fileID: 4144693338395491502}
   - component: {fileID: 956576566732075126}
   - component: {fileID: 2323722501679491157}
-  - component: {fileID: 2140517352035525913}
   - component: {fileID: 8912679289178444829}
   m_Layer: 0
   m_Name: checkpointroom_stair
@@ -63,6 +63,30 @@ MonoBehaviour:
   itemSpawnPoints: []
   roomName: Stair
   roomType: 64
+--- !u!114 &-5175756032886332108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615390851715763733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d3f1bad87398243870149ac3c51d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2140517352035525913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615390851715763733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &4144693338395491502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76,18 +100,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 166.33766, y: 602.75146, z: 290.41284}
   m_Center: {x: -48.61074, y: -0.29516602, z: -282.29944}
---- !u!114 &-5175756032886332108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2615390851715763733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88d3f1bad87398243870149ac3c51d4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &956576566732075126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114,18 +126,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 158.89212, y: 298.91867, z: 83.5}
   m_Center: {x: -46.30359, y: 151.1, z: -475.6}
---- !u!114 &2140517352035525913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2615390851715763733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f2a0dfa5d3fac64cb44e03595aea93e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8912679289178444829
 Rigidbody:
   m_ObjectHideFlags: 0

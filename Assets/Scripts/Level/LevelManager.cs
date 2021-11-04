@@ -33,4 +33,8 @@ public class LevelManager : MonoBehaviour
         string newLevelObjective = GameObjectiveInSubLevels[newLevel - 1];
         UI.GetComponent<MsgDisplayer>().SetMainObjective(newLevelObjective);
     }
+    public int GetPlayerInLevel()
+    {
+        return this.playerInLevel;
+    }
 }

@@ -49,28 +49,6 @@ public class EnemyManager : MonoBehaviour
 
     private void HandleStateMachine()
     {
-        /*
-        if(enemyLocomotionSystem.currentTarget != null)
-        {
-            enemyLocomotionSystem.distanceFromTarget = Vector3.Distance(enemyLocomotionSystem.currentTarget.transform.position, transform.position);
-        }
-        
-        if(enemyLocomotionSystem.currentTarget == null)// if there is no player find player
-        {
-            enemyLocomotionSystem.HandleDetection();
-        }
-        else if(enemyLocomotionSystem.distanceFromTarget > enemyLocomotionSystem.stoppingDistance)// if find player, move to player
-        {
-            Debug.Log("handle move to target");
-            enemyLocomotionSystem.HandleMoveToTarget();
-        }
-        else if(enemyLocomotionSystem.distanceFromTarget <= enemyLocomotionSystem.stoppingDistance)
-        {
-            //Handle our attack
-            Debug.Log("handle attack");
-            //AttackTarget();
-        }*/
-
         if(currenState != null)
         {
             State nextState = currenState.Tick(this, enemyAnimatorManager);

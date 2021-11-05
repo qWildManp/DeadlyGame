@@ -20,7 +20,7 @@ public class playerInteractBehavior : MonoBehaviour
     {
         Ray ray = GetComponent<PlayerRayCast>().GetPlayerRay();
         RaycastHit hit;
-        if (inventary && inventary.CheckItem("FLASH LIGHT"))// if player has flash light,activate the flash light 
+        if (inventary && inventary.CheckItem("FLASH LIGHT")!= null)// if player has flash light,activate the flash light 
         {
             flashLight.gameObject.SetActive(true);
             flashLight.gameObject.GetComponent<FlashLightBehavior>().inPlayerHand = true;

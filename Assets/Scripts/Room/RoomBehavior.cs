@@ -18,7 +18,6 @@ public class RoomBehavior : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("hit :" + other.gameObject.name);
             string roomName = GetComponent<Room>().GetRoomName();
             RoomType roomType = GetComponent<Room>().GetRoomType();
             int roomInLevel = Convert.ToInt32(GetComponent<Room>().getRoomID()[0]);

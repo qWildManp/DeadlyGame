@@ -7,6 +7,7 @@ public class attackState : State
     public combatState combatState;
     public EnemyAttackAction[] enemyAttacks;
     public EnemyAttackAction currentAttack;
+    public idleState idleState;
     public override State Tick(EnemyManager enemyManager, EnemyAnimatorManager enemyAnimatorManager)
     {
         float distanceFromTarget = Vector3.Distance(enemyManager.currentTarget.transform.position, enemyManager.transform.position);
@@ -15,15 +16,13 @@ public class attackState : State
         //check for attack range
         if (enemyManager.isPerformingAction)
             return this;
-
-
+        Debug.Log("player health : " + enemyManager.currentTarget.GetPlayerCurrentHealth());
+        if (enemyManager.currentTarget.GetPlayerCurrentHealth() <= 0)
+            return idleState;
         if (currentAttack != null)
         {
-            Debug.Log("test1");
-            Debug.Log(enemyManager.distanceFromTarget);
             if (enemyManager.distanceFromTarget < currentAttack.minDistanceNeedToAttack)
             {
-                Debug.Log("test2");
                 return this;
             }
             else if (enemyManager.distanceFromTarget < currentAttack.maxDistanceNeedToAttack)

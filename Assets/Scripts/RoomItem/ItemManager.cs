@@ -57,9 +57,9 @@ public class ItemManager : MonoBehaviour
 				break;
         }
 		//Instantiate
-		Debug.Log("spawn item name :" + spawnedPrefab.name);
-		Debug.Log("spawn at :" + spawnPoint.name);
-		Debug.Log("Spawn point position : " + spawnPoint.position.ToString());
+		//Debug.Log("spawn item name :" + spawnedPrefab.name);
+		//Debug.Log("spawn at :" + spawnPoint.name);
+		//Debug.Log("Spawn point position : " + spawnPoint.position.ToString());
 		spawnedPrefab.transform.position = spawnPoint.position;
 		spawnedPrefab.GetComponent<RoomItem>().SetSpawnAt(spawnPoint);
 	}

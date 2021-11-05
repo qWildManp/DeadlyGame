@@ -33,7 +33,7 @@ public class DoorBehavior : MonoBehaviour
         {
             if (playerEnter && Input.GetKeyDown(KeyCode.E))
             {
-                if (islocked && GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().CheckItem(this.unlockRequirement))
+                if (islocked && GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().CheckItem(this.unlockRequirement) != null)
                 {// if the door is locked by key
                     UI.GetComponent<MsgDisplayer>().SetMessage("Door Unlocked");
                     UnlockDoor();
@@ -120,7 +120,8 @@ public class DoorBehavior : MonoBehaviour
         }
         else if(other.tag == "Killer" && !islocked)// if killer approach the door,door will automaticlly open
         {
-            animator.SetBool("DoorOpen", true);
+            if(animator != null)
+                animator.SetBool("DoorOpen", true);
         }
     }
     private void OnTriggerExit(Collider other)// if killer approach the door,door will automaticlly open
@@ -132,7 +133,8 @@ public class DoorBehavior : MonoBehaviour
         }
         else if (other.tag == "Killer")
         {
-            animator.SetBool("DoorOpen", false);
+            if (animator != null)
+                animator.SetBool("DoorOpen", false);
         }
     }
     public void ChangeDoorStatus()

@@ -71,10 +71,11 @@ public class fuseboxBehavior : InteractiveItem
     }
     private void RestoreFuseSwitch()
     {
-        if(GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().CheckItem("FUSE HANDLE"))
+        GameObject handleInInventary = GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().CheckItem("FUSE HANDLE");
+        if (handleInInventary != null)
         {
             msg = "";
-            GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().UseItem("FUSE HANDLE");
+            GameObject.Find("PlayerInventary").GetComponent<PlayerInventary>().UseItem(handleInInventary);
             this.hasHandle = true;
         }
         else

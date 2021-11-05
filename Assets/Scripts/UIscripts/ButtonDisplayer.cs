@@ -7,7 +7,7 @@ public class ButtonDisplayer : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] GameObject Info_UI;
-    [SerializeField] GameObject requireItem;
+    [SerializeField] GameObject[] requireItems;
     void Start()
     {
         
@@ -16,15 +16,14 @@ public class ButtonDisplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Info_UI.GetComponent<ItemInfoDisplayer>().currentDisplayItem == requireItem)
+        foreach(GameObject requireItem in requireItems)
         {
-            //this.gameObject.SetActive(true);
-            this.gameObject.GetComponent<Button>().interactable = true;
+            if (Info_UI.GetComponent<ItemInfoDisplayer>().currentDisplayItem == requireItem)
+            {
+                this.gameObject.GetComponent<Button>().interactable = true;
+                return;
+            }
         }
-        else
-        {
-            //this.gameObject.SetActive(false);
-            this.gameObject.GetComponent<Button>().interactable = false;
-        }
+        this.gameObject.GetComponent<Button>().interactable = false;
     }
 }

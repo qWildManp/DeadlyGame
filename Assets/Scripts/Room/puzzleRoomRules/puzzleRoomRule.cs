@@ -48,7 +48,15 @@ public class puzzleRoomRule : MonoBehaviour
                 }
                 else if(!playerEnter || isSolved)
                 {
-                    Door1.GetComponent<DoorBehavior>().SetDoorLock(false, "");
+                    //handle the situation that two puzzle room connect each other witch may cuase the conneting door lock conflict.
+                    //Now the connecting door lock will follow the previous puzzle room solve status.If previous room puzzle not solve ,the connecting door between two will remain locked
+                    GameObject previousRoom = exit1.parent.gameObject;
+                    if (previousRoom.GetComponent<Room>().GetRoomType() == RoomType.PUZZLE)
+                    {
+                       bool previousRoomPuzzleSolved =  previousRoom.GetComponent<puzzleRoomRule>().GetPuzzleIsSolved();
+                       if(previousRoomPuzzleSolved)
+                            Door1.GetComponent<DoorBehavior>().SetDoorLock(false, "");
+                    }
                     Door2.GetComponent<DoorBehavior>().SetDoorLock(false, "");
                 }
             }

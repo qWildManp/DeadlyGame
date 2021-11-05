@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DangerRoomBehavior : MonoBehaviour
 {
@@ -8,10 +9,12 @@ public class DangerRoomBehavior : MonoBehaviour
     [SerializeField] private GameObject killer;
     private bool canGenerateKiller;
     private int roomInSublevel;
+    private bool hasGenerateKiller;
     [SerializeField] private int playerInLevel;
     void Start()
     {
         canGenerateKiller = true;
+        hasGenerateKiller = false;
         roomInSublevel = System.Convert.ToInt32(GetComponent<Room>().getRoomID()[0]);
     }
 
@@ -37,14 +40,26 @@ public class DangerRoomBehavior : MonoBehaviour
         this.playerInLevel = playerCurrentLevel;
         if(playerInLevel == roomInSublevel && canGenerateKiller)
         {
+            if (!hasGenerateKiller)
+            {
+                //TODO: killer activate successfully but it shows warning: Failed to create agent because it is not close enough to the NavMesh.And killer cannot move on the Navmesh
+                killer.SetActive(true);
+                killer.transform.SetParent(null, true);
+                /*
+                Vector3 randomDirection = killer.transform.position + Random.insideUnitSphere * 100;
+                NavMeshHit destionation;
+                bool hasGenerationPoinit = NavMesh.SamplePosition(randomDirection, out destionation, 100, NavMesh.AllAreas);
+                if (hasGenerationPoinit)
+                  killer.transform.position = destionation.position;*/
 
-            //TODO: killer activate successfully but it shows warning: Failed to create agent because it is not close enough to the NavMesh.And killer cannot move on the Navmesh
-            killer.SetActive(true);
-            killer.transform.SetParent(null, true);
+                hasGenerateKiller = true;
+            }
+
         }
         if (!canGenerateKiller || playerInLevel != roomInSublevel)
         {
             killer.SetActive(false);
+            hasGenerateKiller = false;
         }
     }
 

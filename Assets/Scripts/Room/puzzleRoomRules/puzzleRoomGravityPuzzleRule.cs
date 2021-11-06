@@ -25,7 +25,6 @@ public class puzzleRoomGravityPuzzleRule : puzzleRoomRule
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hit : " + other.name);
         if (other.tag == "Player" && !hasShowObjective)
         {
             UI.GetComponent<MsgDisplayer>().SetSecondObjective("Solve the gravity puzzle");

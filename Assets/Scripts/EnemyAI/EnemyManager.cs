@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.AI;
 public class EnemyManager : MonoBehaviour
 {
-    EnemyLocomotionSystem enemyLocomotionSystem;
     EnemyAnimatorManager enemyAnimatorManager;
 
     public State currenState;
@@ -27,7 +26,6 @@ public class EnemyManager : MonoBehaviour
     public float currentRecoveryTime = 0;
     void Awake()
     {
-        enemyLocomotionSystem = GetComponent<EnemyLocomotionSystem>();
         enemyAnimatorManager = GetComponentInChildren<EnemyAnimatorManager>();
         navMeshAgent = GetComponentInChildren<NavMeshAgent>();
         navMeshAgent.enabled = true;
@@ -64,70 +62,6 @@ public class EnemyManager : MonoBehaviour
     {
         currenState = state;
     }
-    private void AttackTarget()
-    {/*
-        if (isPerformingAction)
-            return;
-
-        if(currentAttack == null)
-        {
-            GetNewAttack();
-        }
-        else
-        {
-            isPerformingAction = true;
-            currentRecoveryTime = currentAttack.recoveryTime;
-            enemyAnimatorManager.PlayTargetAnimation(currentAttack.actionAnimation, true);
-            enemyAnimatorManager.animator.SetFloat("Vertical", 0);
-            currentAttack = null;
-        }
-        */
-    }
-    private void GetNewAttack()
-    {/*
-        Vector3 targetDirection = enemyLocomotionSystem.currentTarget.transform.position - transform.position;
-        float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
-        enemyLocomotionSystem.distanceFromTarget = Vector3.Distance(enemyLocomotionSystem.currentTarget.transform.position, transform.position);
-
-        int maxScore = 0;
-
-        for (int i = 0; i <enemyAttacks.Length; i++){
-            EnemyAttackAction enemyAttackAction = enemyAttacks[i];
-            if(enemyLocomotionSystem.distanceFromTarget <= enemyAttackAction.maxDistanceNeedToAttack
-                && enemyLocomotionSystem.distanceFromTarget >= enemyAttackAction.minDistanceNeedToAttack)
-            {
-                if(viewableAngle<= enemyAttackAction.maxAttackAngle
-                    && viewableAngle >= enemyAttackAction.minAttackAngle)
-                {
-                    maxScore += enemyAttackAction.attackScore;
-                }
-            }
-        }
-
-        int randomValue = Random.Range(0, maxScore);
-        int tempScore = 0;
-
-        for (int i = 0; i < enemyAttacks.Length; i++)
-        {
-            EnemyAttackAction enemyAttackAction = enemyAttacks[i];
-            if (enemyLocomotionSystem.distanceFromTarget <= enemyAttackAction.maxDistanceNeedToAttack
-                && enemyLocomotionSystem.distanceFromTarget >= enemyAttackAction.minDistanceNeedToAttack)
-            {
-                if (viewableAngle <= enemyAttackAction.maxAttackAngle
-                    && viewableAngle >= enemyAttackAction.minAttackAngle)
-                {
-                    if (currentAttack != null)
-                        return;
-                    tempScore += enemyAttackAction.attackScore;
-                    if(tempScore > randomValue)
-                    {
-                        currentAttack = enemyAttackAction;
-                    }
-                }
-            }
-        } */
-    }
-   
     private void HandleRecoveryTimer()
     {
         if(currentRecoveryTime > 0)

@@ -682,6 +682,8 @@ MonoBehaviour:
   outterButton: {fileID: 7539170760519035072}
   gravityPuzzleSolved: 0
   moveStatueSolved: 0
+  gravitypuzzleChecked: 0
+  moveStatueChecked: 0
 --- !u!114 &8779963866240382230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,7 +1144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8597085559363808162
 Transform:
   m_ObjectHideFlags: 0
@@ -1151,7 +1153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7514499380561353817}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -790, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5398736778508497710}

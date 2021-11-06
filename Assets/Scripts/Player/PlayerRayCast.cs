@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerRayCast : MonoBehaviour
 {
     // Start is called before the first frame update
-    Transform playerCamera;
+    [SerializeField] Transform playerCamera;
+    [SerializeField] Transform flashLight;
     Ray ray;
     void Start()
     {
-        playerCamera = transform.GetChild(0);
     }
 
     // Update is called once per frame

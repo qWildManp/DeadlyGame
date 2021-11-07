@@ -29,7 +29,7 @@ public class idleState : State
                 if (viewableAngle > enemyManager.minDetectionAngle && viewableAngle < enemyManager.maxDetectionAngle)
                 {
                     enemyManager.currentTarget = collider.GetComponent<PlayerStats>();
-                    if (enemyManager.currentTarget.GetPlayerCurrentHealth() <= 0)// if target is dead, there is no target
+                    if (enemyManager.currentTarget.GetPlayerCurrentHealth() <= 0|| enemyManager.currentTarget.isPlayerInSafeArea)// if target is dead or in safe area, there is no target
                     {
                         enemyManager.currentTarget = null;
                     }

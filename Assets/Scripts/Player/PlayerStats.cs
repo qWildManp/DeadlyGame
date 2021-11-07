@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]private int currenthealth;
     [SerializeField]private int maxhealth;
     [SerializeField] bool playerDead;
+    public bool isPlayerInSafeArea;
     [SerializeField] GameObject playerCamera;
     private Animator playerCameraAnimator;
     // Start is called before the first frame update

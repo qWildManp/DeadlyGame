@@ -38,7 +38,7 @@ public class pursueState : State
         {
             return combatState;
         }
-        if(enemyManager.distanceFromTarget >= enemyManager.maxDetectionRange)// if player out of the max dectection range
+        if(enemyManager.distanceFromTarget >= enemyManager.maxDetectionRange || enemyManager.currentTarget.isPlayerInSafeArea)// if player out of the max dectection range or in safe area,killer stop chasing
         {
                 enemyManager.currentTarget = null;//reset killer target
                 enemyManager.navMeshAgent.nextPosition = transform.position;

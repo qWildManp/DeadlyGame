@@ -59,6 +59,7 @@ public class RoomManager : MonoBehaviour
     private int ruleIndex = 0;
     private bool hasOverlap = false;
     private int badGeneration = 0;
+    public int currentTotalRoomNum = 0;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -160,17 +161,18 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] private float countDown = 1f;
     private float currentCountDown = 1f;
-    private bool hasGeneratedItems = false;
-    private bool hasGeneratedDoors = false;
-    private bool hasGeneratedCharacter = false;
-    private bool hasInitializeEndRoom = false;
+    public bool hasGenerateRooms = false;
+    public bool hasGeneratedItems = false;
+    public bool hasGeneratedDoors = false;
+    public bool hasGeneratedCharacter = false;
+    public bool hasInitializeEndRoom = false;
+    public bool hasFinishInitialize = false;
     private void Update()
     {
         currentCountDown -= Time.deltaTime;
         RoomGenerateTask activeTask;
         if (currentCountDown <= 0)
         {
-
             if (roomTasks.Count > 0)
             {
                 //Debug.Log(previousRoom);
@@ -228,6 +230,7 @@ public class RoomManager : MonoBehaviour
                         }
                         else
                         {
+                            hasGenerateRooms = true;
                             //Generate Item
                             if (!hasGeneratedItems)
                             {
@@ -307,6 +310,7 @@ public class RoomManager : MonoBehaviour
                             {
                                 GameObject.Find("endroom(Clone)").GetComponent<EndRoomBehavior>().GetTwoPuzzleRooms();
                             }
+                            hasFinishInitialize = true;
                             return;
                         }
                     }
@@ -400,9 +404,10 @@ public class RoomManager : MonoBehaviour
                 availableRoomNums[pickedType] -= 1;
             }
             generatedRoomCount += 1;
+            currentTotalRoomNum += 1;
             AddTask(new RoomGenerateTask(RoomTask.TaskType.GENERATE_NEW_ROOM));
             SetLastRoom(connectingRoom.GetComponent<Room>());
-            Debug.Log("Generated room count: " + generatedRoomCount.ToString());
+           
         }
 
         void PrintAllExitNames()
@@ -460,6 +465,7 @@ public class RoomManager : MonoBehaviour
                 if (previousRoom.GetRoomType() != RoomType.CHECKPOINT)// if destory room is checkpoint room do not changde the generated num
                 {
                     generatedRoomCount -= 1;
+                    currentTotalRoomNum -= 1;
                 }
                 //Add new task
                 if (regenerate)

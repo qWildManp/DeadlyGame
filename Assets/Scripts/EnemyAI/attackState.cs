@@ -16,7 +16,6 @@ public class attackState : State
         //check for attack range
         if (enemyManager.isPerformingAction)
             return this;
-        Debug.Log("player health : " + enemyManager.currentTarget.GetPlayerCurrentHealth());
         if (enemyManager.currentTarget.GetPlayerCurrentHealth() <= 0)
             return idleState;
         if (currentAttack != null)
@@ -59,6 +58,7 @@ public class attackState : State
 
         for (int i = 0; i <enemyAttacks.Length; i++){
             EnemyAttackAction enemyAttackAction = enemyAttacks[i];
+            Debug.Log(enemyAttacks);
             if(enemyManager.distanceFromTarget <= enemyAttackAction.maxDistanceNeedToAttack
                 && enemyManager.distanceFromTarget >= enemyAttackAction.minDistanceNeedToAttack)
             {

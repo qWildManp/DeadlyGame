@@ -303,7 +303,7 @@ public class RoomManager : MonoBehaviour
                                 {
                                     Destroy(GameObject.Find("Camera"));
                                     player.SetActive(true);
-                                    player.transform.position = new Vector3(219, 210, -137);
+                                    //player.transform.position = new Vector3(24f, -142f, -6f);
                                     hasGeneratedCharacter = true;
                                 }
                             if (!hasInitializeEndRoom)

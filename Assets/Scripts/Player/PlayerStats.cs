@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using StarterAssets;
+using TMPro;
 public class PlayerStats : MonoBehaviour
 {
     GameObject UI;
@@ -32,7 +33,12 @@ public class PlayerStats : MonoBehaviour
             playerCameraAnimator.enabled = true;
             GetComponent<FirstPersonController>().enabled = false;
             playerCameraAnimator.Play("PlayerDeath");
+            Invoke("ActivePlayerDiedUI", 1f);
         }
+    }
+    private void ActivePlayerDiedUI()
+    {
+        UI.GetComponent<MsgDisplayer>().ActivePlayerDiedUI();
     }
     public void GetHit()
     {

@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c42ba8739f75e044a5df7db597c5bff, type: 3}
   m_Name: ItemsSpawnRule 3
   m_EditorClassIdentifier: 
-  totalItemsInSublevel: 4
+  totalItemsInSublevel: 6
   maxKeyCount: 0
-  maxFlashLightCount: 0
-  maxToolCount: 4
-  maxBallCount: 0
-  maxClueCount: 0
+  maxToolCount: 6
   levelKeyItem: 4

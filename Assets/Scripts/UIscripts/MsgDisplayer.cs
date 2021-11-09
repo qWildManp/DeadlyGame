@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-
+using TMPro;
 public class MsgDisplayer : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]private GameObject Message;
     private Transform Messageblank;
+    [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject PlaceNameblank;
     [SerializeField] private int msgCountdown;
     [SerializeField] private GameObject MainGameObjectives;
@@ -124,5 +125,17 @@ public class MsgDisplayer : MonoBehaviour
     {
         Hintblank.GetComponent<Text>().text = "";
     }
-    
+
+    public void ActivePlayerDiedUI()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        gameOverUI.SetActive(true);
+        gameOverUI.transform.Find("GameOverText").GetComponent<TMP_Text>().text = "You Died";
+    }
+    public void ActivePlayerFinishUI()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        gameOverUI.SetActive(true);
+        gameOverUI.transform.Find("GameOverText").GetComponent<TMP_Text>().text = "To be continue ...";
+    }
 }

@@ -4,14 +4,19 @@ using UnityEngine;
 using System.Threading;
 public class ElevatorBodyBehavior : MonoBehaviour
 {
+    GameObject UI;
     [SerializeField] GameObject innerButton;
     [SerializeField] GameObject elevatorDoor;
     private Animator animator;
+    private bool hasShownUI;
     private Animator doorAnimator;
     // Start is called before the first frame update
     void Start()
     {
+        hasShownUI = false;
+        UI = GameObject.Find("Canvas");
         animator = GetComponent<Animator>();
+        animator.enabled = false;
         //doorAnimator = elevatorDoor.GetComponent<Animator>();
     }
 
@@ -20,12 +25,19 @@ public class ElevatorBodyBehavior : MonoBehaviour
     {
         if (innerButton.GetComponent<ElevatorButtonBehavior>().GetButtonPress())
         {
-           
-            animator.SetBool("open", true);
+            animator.enabled = true;
+            animator.Play("elevator_up");
+            
+            if (!hasShownUI)
+            {
+                Invoke("ActivePlayerFinishUI", 1.5f);
+                hasShownUI = true;
+            }
+            
         }
-        else
-        {
-            animator.SetBool("open", false);
-        }
+    }
+    private void ActivePlayerFinishUI()
+    {
+        UI.GetComponent<MsgDisplayer>().ActivePlayerFinishUI();
     }
 }

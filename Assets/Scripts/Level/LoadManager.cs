@@ -21,11 +21,22 @@ public class LoadManager : MonoBehaviour
         }
 
     }
+    public void BackToMenu()
+    {
+        StartCoroutine(LoadMenu());
+    }
     public void LoadNextLevel()
     {
         StartCoroutine(LoadLevel());
     }
-    
+    IEnumerator LoadMenu()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex - 1);
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
+    }
     IEnumerator LoadLevel()
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);

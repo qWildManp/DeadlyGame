@@ -4334,6 +4334,7 @@ GameObject:
   - component: {fileID: -4095100020647776029}
   - component: {fileID: 8383558030270150797}
   - component: {fileID: -7766761888186824826}
+  - component: {fileID: -5913030269203274989}
   m_Layer: 0
   m_Name: checkpointroom
   m_TagString: Untagged
@@ -4436,6 +4437,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-5913030269203274989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6803216292925035303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb84fdbc668e22546b23ff1ba64b666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7163735036225657874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,14 +6393,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c852d395baf5ba24e9dfd76c8370d9e6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
---- !u!4 &6349783493381054994 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4203117177545618966, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
-  m_PrefabInstance: {fileID: 7082630302625895428}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5177851722703492235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2707193380517822607, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
+  m_PrefabInstance: {fileID: 7082630302625895428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6349783493381054994 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4203117177545618966, guid: 6a9cbb720cc30b54cae50e53bf112cef, type: 3}
   m_PrefabInstance: {fileID: 7082630302625895428}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8389432683171461206

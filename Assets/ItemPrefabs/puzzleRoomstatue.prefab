@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2124654500015026624}
   - component: {fileID: 1363856691365702179}
   - component: {fileID: 6636674892590300022}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: puzzleRoomstatue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 7691469496638453686}
   - component: {fileID: 7293571637767574229}
   - component: {fileID: 4378819444979807975}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: 900315470971758699}
   - component: {fileID: -2443813000513247660}
   - component: {fileID: 6629513705435893610}
+  - component: {fileID: 1694927159901872740}
   m_Layer: 0
   m_Name: exploringroom3
   m_TagString: Untagged
@@ -936,6 +937,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1694927159901872740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936490311397131399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb84fdbc668e22546b23ff1ba64b666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1038361003471841354
 GameObject:
   m_ObjectHideFlags: 0

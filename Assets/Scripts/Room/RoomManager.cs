@@ -121,8 +121,6 @@ public class RoomManager : MonoBehaviour
         return currentExit;
     }
 
-
-
     //Generate checkpoint room
     public void GenerateCheckpointRoom()
     {
@@ -422,7 +420,6 @@ public class RoomManager : MonoBehaviour
 
         public void DestroyLastRoom(bool regenerate = false)
         {
-            //Debug.Log("Delete Room");
             if (previousRoom != null)
             {
                 if (previousRoom.GetRoomType() == RoomType.CHECKPOINT && regenerate == false)

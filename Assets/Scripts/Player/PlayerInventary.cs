@@ -122,28 +122,37 @@ public class PlayerInventary : MonoBehaviour
         }
         return null;
     }
-    public void UseItem(GameObject CurrenDisplayitemUI)
+    public void UseItem(GameObject item)
     {
-        GameObject item = CurrenDisplayitemUI.GetComponent<ItemInfoDisplayer>().currentDisplayItem;
-        string item_name = item.GetComponent<RoomItem>().GetItemName();
+        GameObject usingItem;
+        ItemInfoDisplayer itemDisplayer = item.GetComponent<ItemInfoDisplayer>();
+        Debug.Log(itemDisplayer);
+        if (itemDisplayer != null)//if it is not a item displayer
+        {
+             usingItem = item.GetComponent<ItemInfoDisplayer>().currentDisplayItem;
+        }
+        else
+        {
+            usingItem = item;
+        }
+        
+        string item_name = usingItem.GetComponent<RoomItem>().GetItemName();
         switch(item_name){
             case "BATTERY":
-                UseBattery(item);
+                UseBattery(usingItem);
                 break;
             case "HEALING":
-                UseHealing(item);
+                UseHealing(usingItem);
                 break;
             default:
-                foreach (KeyValuePair<GameObject, int> itemNumPair in Inventarys)
+              if (Inventarys.ContainsKey(usingItem))
                 {
-                    RoomItem itemInfo = itemNumPair.Key.GetComponent<RoomItem>();
-                    string itemName = itemInfo.GetItemName();
-                    if (itemName == item_name && itemNumPair.Value > 0)
+                    if (Inventarys[usingItem] > 0)
                     {
-                        Inventarys[itemNumPair.Key] -= 1;
-
+                        Inventarys[usingItem] -= 1;
                     }
                 }
+                   
                 break;
                 
         }
@@ -151,37 +160,47 @@ public class PlayerInventary : MonoBehaviour
     public void UseHealing(GameObject item)
     {
         PlayerStats playerStats = GameObject.Find("Player").transform.Find("PlayerCapsule").GetComponent<PlayerStats>();
-        if (!Inventarys.ContainsKey(item))
-            return;
-        if (Inventarys[item] <= 0)// if there is no avaliable healing
-        {
-            UI.GetComponent<MsgDisplayer>().SetMessage("No healing!");
-            return;
-        }
-        else 
-        {
-           if(playerStats.Healing())
-                Inventarys[item] -= 1;
-        }
+        string item_name = item.GetComponent<RoomItem>().GetItemName();
+        foreach (KeyValuePair<GameObject, int> itemPair in Inventarys)
+         {
+           if (item_name == itemPair.Key.GetComponent<RoomItem>().GetItemName())
+           {
+                if (itemPair.Value <= 0)// if there is no avaliable healing
+                {
+                    UI.GetComponent<MsgDisplayer>().SetMessage("No healing!");
+                    return;
+                }
+                else
+                {
+                    if (playerStats.Healing())
+                        Inventarys[itemPair.Key] -= 1;
+                }
+           }
+         }
     }
     public void UseBattery(GameObject item)//Use battery
     {
         FlashLightBehavior flashLight = playerFlashLight.GetComponent<FlashLightBehavior>();
-        if (!Inventarys.ContainsKey(item))
-            return;
-        if (Inventarys[item] <= 0)// if there is no avaliable battery 
+        string item_name = item.GetComponent<RoomItem>().GetItemName();
+        foreach (KeyValuePair<GameObject, int> itemPair in Inventarys)
         {
-            UI.GetComponent<MsgDisplayer>().SetMessage("No Battery!");
-            return;
-        }
-        if (playerFlashLight.activeInHierarchy)
-        {
-            if (flashLight.AddBattery())
-                Inventarys[item] -= 1;
-        }
-        else // if player haven't found flashlight
-        {
-            UI.GetComponent<MsgDisplayer>().SetMessage("I need a flashlight!");
+            if (item_name == itemPair.Key.GetComponent<RoomItem>().GetItemName())
+            {
+                if (itemPair.Value <= 0)// if there is no avaliable battery 
+                {
+                    UI.GetComponent<MsgDisplayer>().SetMessage("No Battery!");
+                    return;
+                }
+                if (playerFlashLight.activeInHierarchy)
+                {
+                    if (flashLight.AddBattery())
+                        Inventarys[itemPair.Key] -= 1;
+                }
+                else // if player haven't found flashlight
+                {
+                    UI.GetComponent<MsgDisplayer>().SetMessage("I need a flashlight!");
+                }
+            }
         }
 
     }

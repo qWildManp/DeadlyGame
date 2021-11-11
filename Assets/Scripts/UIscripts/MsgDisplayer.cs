@@ -128,13 +128,11 @@ public class MsgDisplayer : MonoBehaviour
 
     public void ActivePlayerDiedUI()
     {
-        Cursor.lockState = CursorLockMode.Confined;
         gameOverUI.SetActive(true);
         gameOverUI.transform.Find("GameOverText").GetComponent<TMP_Text>().text = "You Died";
     }
     public void ActivePlayerFinishUI()
     {
-        Cursor.lockState = CursorLockMode.Confined;
         gameOverUI.SetActive(true);
         gameOverUI.transform.Find("GameOverText").GetComponent<TMP_Text>().text = "To be continue ...";
     }

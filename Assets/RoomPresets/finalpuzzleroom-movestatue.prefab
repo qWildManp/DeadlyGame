@@ -12953,7 +12953,7 @@ GameObject:
   - component: {fileID: 3292638501089447742}
   - component: {fileID: 7806283452615387364}
   - component: {fileID: 5586438480558428664}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: statue_bull_group1gbullpCube2sheep_statue_bullpCube2sheep_statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14774,7 +14774,7 @@ GameObject:
   - component: {fileID: 6041337449459877207}
   - component: {fileID: 1011997558608302729}
   - component: {fileID: 5309016129700453296}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sheep Statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25368,7 +25368,7 @@ GameObject:
   - component: {fileID: 2083850744208228867}
   - component: {fileID: 9062043412537156910}
   - component: {fileID: 5879824984319920818}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: statue_sheep_group2pCube2sheep_statuesheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40911,7 +40911,7 @@ GameObject:
   - component: {fileID: 9151386352944182641}
   - component: {fileID: 5373240371823052081}
   - component: {fileID: 1676856224472294603}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: bullbull_statuebullgroup1_statue_bull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41518,7 +41518,7 @@ GameObject:
   - component: {fileID: 8836033224984654247}
   - component: {fileID: 9204502086545503517}
   - component: {fileID: 4920422479527938178}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sheepsheep_statuegroup2_statue_sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50013,7 +50013,7 @@ GameObject:
   - component: {fileID: 8959473429050423168}
   - component: {fileID: 4841410642021157606}
   - component: {fileID: 567302724814558228}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Horse Statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72228,6 +72228,7 @@ GameObject:
   - component: {fileID: 2322323522112249819}
   - component: {fileID: 3456672213629735872}
   - component: {fileID: 6127976865206675206}
+  - component: {fileID: 9198061402122690765}
   m_Layer: 0
   m_Name: finalpuzzleroom-movestatue
   m_TagString: Untagged
@@ -72385,6 +72386,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 430.61182, y: 288.26212, z: 974.32434}
   m_Center: {x: -723.84973, y: 142.24605, z: -2.3172455}
+--- !u!114 &9198061402122690765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035171686179765291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb84fdbc668e22546b23ff1ba64b666c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7037859069206190695
 GameObject:
   m_ObjectHideFlags: 0
@@ -82108,7 +82121,7 @@ GameObject:
   - component: {fileID: 7101750086771202858}
   - component: {fileID: 8978527462222502340}
   - component: {fileID: 1802465885102762997}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bull Statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86140,7 +86153,7 @@ GameObject:
   - component: {fileID: 7973608710172424292}
   - component: {fileID: 2265520225693185648}
   - component: {fileID: 618476755387448160}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: statue_horse_gpCube2sheep_statue1horse_pCube2sheep_statue1horse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93281,7 +93294,7 @@ GameObject:
   - component: {fileID: 4021204403090907102}
   - component: {fileID: 8517408985304657842}
   - component: {fileID: 117582291688613464}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: horsehorse_statue_statue_horse
   m_TagString: Untagged
   m_Icon: {fileID: 0}

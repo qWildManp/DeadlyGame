@@ -353,6 +353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: elevator_button
       objectReference: {fileID: 0}
+    - target: {fileID: 3083843650041425883, guid: 5d6a2a1358660b947a5d1742ae816109, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5713271125902884279, guid: 5d6a2a1358660b947a5d1742ae816109, type: 3}
       propertyPath: m_RootOrder
       value: 0

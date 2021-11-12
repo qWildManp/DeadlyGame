@@ -26,11 +26,12 @@ public class ElevatorBodyBehavior : MonoBehaviour
         if (innerButton.GetComponent<ElevatorButtonBehavior>().GetButtonPress())
         {
             animator.enabled = true;
-            animator.Play("elevator_up");
+            
+            
             
             if (!hasShownUI)
             {
-                
+                animator.SetBool("open", true);
                 Invoke("ActivePlayerFinishUI", 1.5f);
                 hasShownUI = true;
             }

@@ -5,10 +5,12 @@ using UnityEngine;
 public class EnemyAnimatorManager : MonoBehaviour
 {
     public Animator animator;
+    private weaponBehavior weapon;
     EnemyManager enemyManager;
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        weapon = GetComponentInChildren<weaponBehavior>();
         enemyManager = GetComponentInParent<EnemyManager>();
     }
     public void PlayTargetAnimation(string targetAnim, bool isInteracting)
@@ -27,6 +29,14 @@ public class EnemyAnimatorManager : MonoBehaviour
         Vector3 velocity = deltaPos / delta;
         enemyManager.enemyRigiBody.velocity = velocity;
 
+    }
+
+    private void SetWeaponHitboxEnabled(){
+        weapon.EnableWeaponCollider(true);
+    }
+
+    private void SetWeaponHitboxDisabled(){
+        weapon.EnableWeaponCollider(false);
     }
 
 }

@@ -30,7 +30,7 @@ public class ElevatorBodyBehavior : MonoBehaviour
             
             if (!hasShownUI)
             {
-                Cursor.lockState = CursorLockMode.Confined;
+                
                 Invoke("ActivePlayerFinishUI", 1.5f);
                 hasShownUI = true;
             }
@@ -40,5 +40,7 @@ public class ElevatorBodyBehavior : MonoBehaviour
     private void ActivePlayerFinishUI()
     {
         UI.GetComponent<MsgDisplayer>().ActivePlayerFinishUI();
+        Cursor.lockState = CursorLockMode.Confined;
+        Debug.Log("Lock state: " + Cursor.lockState);
     }
 }

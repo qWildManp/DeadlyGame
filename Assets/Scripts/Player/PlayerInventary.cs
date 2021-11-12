@@ -22,14 +22,7 @@ public class PlayerInventary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerInventaryUI.activeInHierarchy)
-        {
-            Cursor.lockState = CursorLockMode.Confined;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+
     }
     public void AddItem(GameObject item)
     {
@@ -79,6 +72,12 @@ public class PlayerInventary : MonoBehaviour
     {
         UI_status = !UI_status;
         playerInventaryUI.SetActive(UI_status);
+        if(UI_status){
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        else{
+            Cursor.lockState = CursorLockMode.Locked;
+        }
         /*
         string showStr = "Items \n";
         int i = 0;

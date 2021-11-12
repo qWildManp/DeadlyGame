@@ -61,11 +61,11 @@ public class idleState : State
     {
         Vector3 randomDirection;
         NavMeshHit destionation;
-        if (!enemyManager.navMeshAgent.pathPending)//ÅĞ¶ÏÕıÔÚ¼ÆËãµÄÂ·¾¶
+        if (!enemyManager.navMeshAgent.pathPending)//ï¿½Ğ¶ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
         {
-            if (enemyManager.navMeshAgent.remainingDistance <= enemyManager.navMeshAgent.stoppingDistance)//ÊÇ·ñ»¹ÔÚÂ·¾¶ÉÏ
+            if (enemyManager.navMeshAgent.remainingDistance <= enemyManager.navMeshAgent.stoppingDistance)//ï¿½Ç·ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
             {
-                if (!enemyManager.navMeshAgent.hasPath || enemyManager.navMeshAgent.velocity.sqrMagnitude == 0f)//ÊÇ·ñµ½´ïÄ¿µÄµØ£¬µ½´ï¾ÍÍ£ÏÂ
+                if (!enemyManager.navMeshAgent.hasPath || enemyManager.navMeshAgent.velocity.sqrMagnitude == 0f)//ï¿½Ç·ñµ½´ï¿½Ä¿ï¿½ÄµØ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½
                 {
                     randomDirection = enemyManager.transform.position + UnityEngine.Random.insideUnitSphere * 600;
                     bool hasDestination = NavMesh.SamplePosition(randomDirection, out destionation, 600, NavMesh.AllAreas);
@@ -104,9 +104,13 @@ public class idleState : State
     private void SetRoutine(EnemyManager enemyManager,Vector3 pos)
     {
             enemyManager.navMeshAgent.enabled = true; //activate navmesh agent
-            enemyManager.navMeshAgent.SetDestination(pos);//×ßµ½Õâ¸öµãÖ®ºó£¬ĞèÒª¼ÌĞø¼ÆËãÒ»¸öĞÂÂ·¾¶
+            enemyManager.navMeshAgent.SetDestination(pos);//ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
             enemyManager.enemyRigiBody.velocity = enemyManager.navMeshAgent.desiredVelocity;
-            enemyManager.transform.rotation = Quaternion.Slerp(transform.rotation, enemyManager.navMeshAgent.transform.rotation, enemyManager.rotationSpeed / Time.deltaTime);  
+
+            //enemyManager.transform.rotation = Quaternion.Slerp(transform.rotation, enemyManager.navMeshAgent.transform.rotation, enemyManager.rotationSpeed / Time.deltaTime);  
+            enemyManager.transform.rotation = Quaternion.Slerp(transform.rotation, enemyManager.navMeshAgent.transform.rotation, 0.05f);  
+            //enemyManager.transform.forward = Vector3.Lerp(transform.forward, finalForwardVector, 0.5f);
+            
     }
    
 }

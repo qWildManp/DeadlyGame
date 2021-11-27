@@ -41,6 +41,7 @@ public class ElevatorBodyBehavior : MonoBehaviour
     private void ActivePlayerFinishUI()
     {
         UI.GetComponent<MsgDisplayer>().ActivePlayerFinishUI();
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         Debug.Log("Lock state: " + Cursor.lockState);
     }

@@ -3645,8 +3645,8 @@ MonoBehaviour:
   viewableAngle: 0
   maxDetectionRange: 300
   detectionRadius: 230
-  maxDetectionAngle: 50
-  minDetectionAngle: -50
+  maxDetectionAngle: 70
+  minDetectionAngle: -70
   currentRecoveryTime: 0
 --- !u!54 &2573109679170440932
 Rigidbody:
@@ -4155,6 +4155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2573109679170440935}
+  animator: {fileID: 0}
 --- !u!1 &2573109679423062581
 GameObject:
   m_ObjectHideFlags: 0

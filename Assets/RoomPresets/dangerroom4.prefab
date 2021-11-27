@@ -14342,6 +14342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8002841716157154638}
+  animator: {fileID: 0}
 --- !u!1 &8002841715936894143
 GameObject:
   m_ObjectHideFlags: 0
@@ -14716,8 +14717,8 @@ MonoBehaviour:
   viewableAngle: 0
   maxDetectionRange: 300
   detectionRadius: 230
-  maxDetectionAngle: 50
-  minDetectionAngle: -50
+  maxDetectionAngle: 70
+  minDetectionAngle: -70
   currentRecoveryTime: 0
 --- !u!54 &8002841716157154637
 Rigidbody:

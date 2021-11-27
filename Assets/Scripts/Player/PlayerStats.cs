@@ -33,6 +33,7 @@ public class PlayerStats : MonoBehaviour
             playerCameraAnimator.enabled = true;
             GetComponent<FirstPersonController>().enabled = false;
             playerCameraAnimator.Play("PlayerDeath");
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             Invoke("ActivePlayerDiedUI", 1f);
         }

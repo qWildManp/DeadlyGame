@@ -73,6 +73,7 @@ public class PlayerInventary : MonoBehaviour
         UI_status = !UI_status;
         playerInventaryUI.SetActive(UI_status);
         if(UI_status){
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
         }
         else{

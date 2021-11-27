@@ -3107,8 +3107,8 @@ MonoBehaviour:
   viewableAngle: 0
   maxDetectionRange: 300
   detectionRadius: 230
-  maxDetectionAngle: 50
-  minDetectionAngle: -50
+  maxDetectionAngle: 70
+  minDetectionAngle: -70
   currentRecoveryTime: 0
 --- !u!54 &1665550945355966769
 Rigidbody:

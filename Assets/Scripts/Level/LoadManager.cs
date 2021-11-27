@@ -17,6 +17,7 @@ public class LoadManager : MonoBehaviour
     {
         if (roomManager)
         {
+            Cursor.visible = false;
             StartCoroutine(LoadScene());
         }
 
